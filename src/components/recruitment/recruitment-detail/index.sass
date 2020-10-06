@@ -1,0 +1,499 @@
+.hr-detail
+	background: #ffffff
+	background-image: url('../img/recruitment/bg-hr-detail.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	.hr-detail-top
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15)
+		padding: 30px 60px
+		@media screen and ( max-width: 1024.98px )
+			padding: 20px 20px
+	.table-striped-detail-wrapper
+		padding-bottom: 50px
+		@media screen and ( max-width: 1024.98px)
+			padding-bottom: 30px
+	.card_title_hr_detail
+		display: flex
+		justify-content: space-between
+		border-bottom: 1px solid #e5e5e5
+		padding-bottom: 20px
+		@media screen and ( max-width: 576px )
+			display: block
+		h1
+			font-size: 30px
+			color: #221f1f
+			font-family: "Montserrat", sans-serif
+			@media screen and ( max-width: 1024.98px )
+				font-size: 20px
+			@media screen and ( max-width: 576px )
+				font-size: 20px
+	.social-network-share
+		display: flex
+		@media screen and ( max-width: 576px )
+			padding-top: 10px
+		.icon
+			display: flex
+			justify-content: center
+			align-items: center
+			a
+				width: 40px
+				height: 40px
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				border: 1px solid #221f1f
+				color: #221f1f
+				font-size: 21px
+				margin-left: 20px
+				&:first-child
+					// background: #3b5998
+				&:nth-child(2)
+					// background: #00abec
+				&:nth-child(3)
+					// background: red
+				span
+					font-size: 18px
+					height: 11px
+					line-height: 11px
+					color: #333333
+					&::before
+						height: 11px
+						line-height: 11px
+				@media screen and ( max-width: 576px )
+					margin-left: 0
+	.card_body_hr_detail
+		// padding: 30px 0 0 0
+		overflow-x: auto
+		table
+			width: 100%
+			margin-top: 20px
+			tbody
+				tr 
+					width: 100%
+					height: 50px
+					th 
+						color: #333333
+						font-size: 16px
+						display: flex
+						padding-top: 8px
+						@media screen and ( max-width: 576px )
+							width: 120px
+						.icon
+							padding-right: 10px
+							i
+								color: #e82429
+								font-size: 16px
+								padding-right: 10px
+						a
+							display: flex
+							justify-content: center
+							align-items: center
+							
+					td
+						font-size: 16px
+						color: #666666
+						width: 50%
+						&:hover
+							cursor: pointer
+							color: #e82429
+	// right-detail - top
+	.bg-right-detail-top
+		background: #e82429
+		padding: 0
+		.right-hr-detail
+			padding: 40px 25px
+			border-bottom: 1px solid #ffffff
+			@media screen and ( max-width: 1024.98px )
+				padding: 30px 25px
+			@media screen and ( max-width: 576px )
+				padding: 20px 25px
+			ul
+				list-style: none
+				padding: 0
+				li
+					padding-bottom: 20px
+					.card_title_hr-detail
+						display: flex
+						.icon
+							i
+								color: #ffffff
+						h3
+							text-transform: uppercase
+							font-size: 18px
+							color: #ffffff
+					.card_title_zone_hr-detail
+						padding-top: 10px
+						p
+							font-size: 16px
+							color: #ffffff
+		.form_apply_hr_detail
+			padding: 40px 25px
+			@media screen and ( max-width: 576px )
+				padding: 0 25px 30px 25px
+			.apply-form
+				@media screen and(max-width:1025px)
+					margin: 0 !important
+					padding: 30px 0 0 0
+				@media screen and(max-width:767px)
+					position: static
+					display: block
+				// @media screen and(max-width:576px)
+				// 	padding: 30px 60px  0 60px
+				.btn.button-apply
+					width: 100%
+					height: 40px
+					display: flex
+					align-items: center
+					justify-content: center
+					border: 1px solid #ffffff
+					margin-bottom: 10px
+					font-family: 'Montserrat', sans-serif
+					.icon
+						color: #ffffff
+						padding-right: 10px
+						font-size: 18px
+					a 
+						color: #ffffff
+						text-transform: uppercase
+					&:hover
+						cursor: pointer
+						background: #ffffff
+						.icon
+							color: #e82429
+						a
+							color: #e82429
+				.btn.button-download
+					width: 100%
+					height: 40px
+					display: flex
+					align-items: center
+					justify-content: center
+					border: 1px solid #ffffff
+					font-family: 'Montserrat', sans-serif
+					.icon
+						color: #ffffff
+						padding-right: 10px
+						font-size: 18px
+					a 
+						color: #ffffff
+						text-transform: uppercase
+					&:hover
+						cursor: pointer
+						background: #ffffff
+						.icon
+							color: #e82429
+						a
+							color: #e82429
+
+	.content-hr-detail-bottom
+		display: flex
+		padding: 50px 0 20px 0
+		border-bottom: 1px solid #e5e5e5
+		.title-hr-detail-bottom
+			width: 25%
+			@media screen and ( max-width: 1024.98px )
+				width: 37%
+			@media screen and ( max-width: 576px )
+				width: 37%
+			h2
+				color: #e82429
+				font-size: 18px
+				text-transform: uppercase
+				@media screen and ( max-width: 576px )
+					font-size: 16px
+		.desc-hr-detail-bottom
+			width: 75%
+			ul
+				padding: 0
+				color: #666666
+				@media screen and ( max-width: 1024.98px )
+					padding: 0 20px
+				@media screen and ( max-width: 576px )
+					padding: 0 20px
+				li
+					p
+						color: #666666
+						font-size: 16px
+			.table_project-detail
+				table
+					tbody
+						tr
+							height: 50px
+			@media screen and ( max-width: 1024.98px)
+				table
+					thead
+						tr
+							th
+								&:first-child
+									display: none
+								&:nth-child(n+3)
+									display: none
+					tbody
+						tr
+							td
+								&:first-child
+									display: none
+								&:nth-child(n+3)
+									display: none
+			@media screen and ( max-width: 768.98px)
+				table
+					thead
+						tr
+							th
+								&:first-child
+									display: none
+								&:nth-child(n+3)
+									display: none
+					tbody
+						tr
+							td
+								&:first-child
+									display: none
+								&:nth-child(n+3)
+									display: none
+	.col-lg-9
+		margin-bottom: 30px
+	.col-lg-3
+		padding: 0
+		margin-bottom: 30px
+	.bg-right-detail-bottom
+		background: #ffffff
+		margin-top: 50px
+		padding: 20px 25px
+	.right-hr-detail-2
+		.title-right-hr-detail-2
+			h3
+				font-size: 18px
+				color: #e82429
+				text-transform: uppercase
+		ul
+			list-style: none
+			padding: 0
+			li
+				p
+					font-size: 16px
+					color: #666666
+					&:nth-child(1)
+						padding-top: 15px
+						font-weight: 700
+					&:nth-child(2)
+						font-size: 16px
+						color: #221f1f
+	.bg-right-detail-bottom-2
+		background: #ffffff
+		margin-top: 25px
+		padding: 0 25px
+	.right-hr-detail-3
+		padding: 20px 0 
+		background: #ffffff
+		.title-right-hr-detail-3
+			padding-bottom: 10px
+			h3
+				font-size: 18px
+				color: #e82429
+				text-transform: uppercase
+		ul
+			list-style: none
+			padding: 0
+			
+			li
+				padding: 15px 0
+				border-bottom: 1px solid #e5e5e5
+				a
+					font-size: 16px
+					color: #221f1f
+				p
+					font-size: 16px
+					color: #666666
+					padding-top: 5px
+				&:hover
+					a
+						color: #e82429
+						border-bottom: 1px solid #e82429
+// .middle-fullwidth
+// 	.hr-detail
+// 		padding: 0 60px 60px 60px!important
+// 		@media screen and ( max-width: 576px )
+// 			padding: 0!important
+// 	.desc-hr-detail-bottom
+// 		table
+// 			tbody
+// 				tr
+// 					td
+// 						&:nth-child(1)
+// 							height: 40px
+// 						&:nth-child(2)
+// 							height: 50px
+
+// .news-detail-page
+// 	.block_recruitment-1
+// 		background: #ffffff
+
+// .button-wrapper-recruitment
+// 	width: 100%
+// .apply-form
+// 	@media screen and(max-width:1025px)
+// 		margin: 0 !important
+// 		padding: 30px 0 0 0
+// 	@media screen and(max-width:767px)
+// 		position: static
+// 		display: block
+// 	@media screen and(max-width:576px)
+// 		padding: 30px 60px  0 60px
+// 	.btn.button-apply
+// 		width: 100%
+// 		height: 40px
+// 		display: flex
+// 		align-items: center
+// 		justify-content: center
+// 		border: 1px solid #c7931c
+// 		margin-bottom: 10px
+// 		a 
+// 			color: #c7931c
+// 		&:hover
+// 			background: #c7931c
+// 			cursor: pointer
+// 			a 
+// 				color: #ffffff
+// 	.btn.button-download
+// 		width: 100%
+// 		height: 40px
+// 		display: flex
+// 		align-items: center
+// 		justify-content: center
+// 		border: 1px solid #c7931c
+// 		a 
+// 			color: #c7931c
+// 		&:hover
+// 			background: #c7931c
+// 			cursor: pointer
+// 			a 
+// 				color: #ffffff
+// //Declare some global css
+// .apply-frm
+// 	margin: 0
+// 	// display: none
+// 	input[type="file"]
+// 		left: 0
+// 	>div
+// 		width: 100%
+// 	#ctl00_phMain_jobApply_pnlNewComment
+// 		position: relative
+// 		display: flex
+// 		flex-wrap: wrap
+// 		>.form-group
+// 			width: 100%
+// 		.col-left,.col-right
+// 			flex: 0 0 100%
+// 			max-width: 100%
+// 			display: flex
+// 			flex-wrap: wrap
+// 			>.form-group
+// 				margin-bottom: 10px
+// 			@media (min-width: 576px)
+// 				margin: 0 -10px
+// 				>.form-group
+// 					padding: 0 10px
+			
+// 	.col-left
+// 		>.form-group
+// 			flex: 0 0 100%
+// 			max-width: 100%
+// 			@media (min-width: 576px)
+// 				&:nth-child(1),
+// 				&:nth-child(2),
+// 				&:nth-child(3),
+// 				&:nth-child(4)
+// 					flex: 0 0 50%
+// 					max-width: 50%
+// 	.col-right
+// 		>.form-group
+// 			flex: 0 0 100%
+// 			max-width: 100%
+// 	h4
+// 		font-size: 16px
+// 		font-weight: 600
+// 		color: #034da2
+// 		text-transform: uppercase
+// 		margin-bottom: 20px
+// 		@media (min-width: 992px)
+// 			width: 100%
+// 	.fa-exclamation-triangle
+// 		top: 50%
+// 		transform: translateY(-50%)
+// 		right: 15px
+// 		color: red
+// 	.label
+// 		font-size: 14px
+// 		font-weight: 400
+// 		color: #999999
+// 		margin-bottom: 4px
+// 		.required
+// 			color: red
+// 	input[type="text"], input[type="password"], textarea
+// 		width: 100%
+// 		border: 1px solid #e5e5e5
+// 		color: lighten(black, 20%)
+// 		font-size: 13px
+// 		padding: 7px 15px
+// 		font-family: 'Bai Jamjuree',sans-serif
+// 		&:focus
+// 			border-color: #034da2
+// 	input[type="text"],input[type="password"]
+// 		height: 50px
+// 	textarea
+// 		height: 200px
+// 	.RadAsyncUpload
+// 		.ruDropZone
+// 			display: none
+// 		.ruFileWrap
+// 			position: relative
+// 			display: block
+// 			height: 50px
+// 		.ruFileInput, .ruBrowse
+// 			height: 50px
+// 			width: 120px
+// 			height: 50px
+// 			background: #e5e5e5
+// 			text-transform: uppercase
+// 			font-size: 15px
+// 			display: flex
+// 			justify-content: center
+// 			align-items: center
+// 			border: 0
+// 		.ruFileInput
+// 			position: absolute
+// 			top: 0
+// 			opacity: 0
+// 	.frm-btn
+// 		margin-top: 20px
+// 		text-align: left
+// 		input[type="submit"]
+// 			height: 40px
+// 			width: 100%
+// 			max-width: 180px
+// 			display: inline-flex
+// 			justify-content: center
+// 			align-items: center
+// 			border-radius: 0
+// 			border: 0
+// 			background: #b96e2b
+// 			color: #fff
+// 			text-transform: uppercase
+// .form-apply
+// 	height: 740px!important
+// 	display: none
+// 	margin-top: 40px
+// 	padding: 0
+// 	&.active
+// 		display: block
+// 	@media (min-width: 623px)
+// 		height: 420px!important
+// 	iframe
+// 		border: 0
+// 		background: white
+// 		width: 100%
+// 		height: 100%

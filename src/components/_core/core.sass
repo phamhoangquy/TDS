@@ -1,0 +1,38 @@
+@function r($size)
+	@return ($size/16px)*1rem
+
+=line($line)
+	overflow: hidden
+	display: -webkit-box
+	text-overflow: ellipsis
+	-webkit-line-clamp: $line
+	-webkit-box-orient: vertical
+
+=img-scale($ratio)
+	padding-top: $ratio
+	display: block
+	position: relative
+	img
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		object-fit: cover
+
+
+$main: #e82429
+
+body, html
+	font-size: 13px
+	line-height: 1.5
+	@media (min-width: 768px) 
+		font-size: 14px
+	@media (min-width: 1025px) 
+		font-size: 15px
+	@media (min-width: 1200px)
+		font-size: 16px
+img,video,iframe
+	max-width: 100%
+
+@import ../../_plugins/util-scss/import.scss

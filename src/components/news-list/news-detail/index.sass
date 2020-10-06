@@ -1,0 +1,121 @@
+.news-detail
+	padding: 160px 0 60px 0
+	background: #fdfcf9
+	@media screen and ( max-width: 576px )
+		padding: 30px 0
+	.bg-left-detail
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1)
+		padding: 30px
+
+	.card-title
+		@media screen and ( max-width: 576px )
+			padding-top: 30px
+		h1
+			font-size: 24px
+			color: #333333
+			@media screen and ( max-width: 576px )
+				font-size: 18px
+	.social-network-share
+		display: flex
+		.icon
+			display: flex
+			a
+				width: 40px
+				height: 40px
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				border: 1px solid #221f1f
+				color: #221f1f
+				font-size: 21px
+				margin-left: 20px
+				&:first-child
+					// background: #3b5998
+				&:nth-child(2)
+					// background: #00abec
+				&:nth-child(3)
+					// background: red
+				span
+					font-size: 18px
+					height: 11px
+					line-height: 11px
+					color: #333333
+					&::before
+						height: 11px
+						line-height: 11px
+	.bottom-wrapper-news-detail
+		border-bottom: 1px solid #f5f5f5
+		display: flex 
+		justify-content: space-between
+		align-items: center
+		padding-bottom: 10px
+		margin-top: 5px
+		time
+			font-size: 14px
+			color: #666
+	.content_news-detail
+		padding: 25px 0 40px 0
+		p
+			padding-bottom: 25px
+			&:nth-child(1)
+				font-weight: 600
+				padding-bottom: 25px
+		h4
+			color: #e92431
+			font-size: 18px
+			font-family: "Montserrat", sans-serif
+			padding-bottom: 10px
+	// .fullcontent
+	// 	padding: 25px 0 25px 0
+	// 	p
+	// 		padding-bottom: 15px
+	// 		img
+	// 			width: 100%
+
+	.right-news
+		@media screen and ( max-width: 576px )
+			margin-top: 30px
+		@media screen and ( max-width: 1024.98px )
+			margin-top: 30px
+		.card-title-right
+			background: #e92431
+			padding: 15px 30px
+			h2
+				color: #ffffff
+				font-size: 18px
+		.card_body
+			display: flex
+			background-color: rgb(255, 255, 255)
+			box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1)
+			padding: 30px
+			border-top: 1px solid #e0e0e0
+			.img
+				img 
+					width: 100px
+					height: 73px
+					object-fit: cover
+			.content_news_detail_right
+				padding: 0 10px
+				width: 100%
+				height: 74px
+				
+				.date
+					time 
+						font-size: 12px
+						color: #adadad
+				.title_news_right
+					padding-top: 5px
+					a
+						font-size: 16px
+						color: #333333
+						font-weight: 600
+						-webkit-box-orient: vertical
+						-webkit-line-clamp: 2
+						display: -webkit-box
+						overflow: hidden
+						text-overflow: ellipsis
+						font-weight: 700
+						&:hover
+							color: #ea2531

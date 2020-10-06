@@ -1,0 +1,243 @@
+.library_image
+	padding: 60px 0 5px 0
+	background: #f6f3f2
+	@media screen and ( max-width: 576px )
+		padding: 30px 0 30px 0
+	.container
+		// margin-bottom: 30px
+		@media screen and ( max-width: 1024.98px )
+			margin-bottom: 0
+		@media screen and ( max-width: 576px )
+			margin-bottom: -30px
+	.block-title
+		@media screen and ( max-width: 576px )
+			padding-bottom: 0
+
+	.col-lg-6
+		.row
+			.col-lg-6
+				margin-bottom: 30px
+				.block-item
+					.item__img
+						a
+							img
+								width: 100%
+								height: 285px
+								object-fit: cover
+
+	.col-lg-6
+		@media screen and ( max-width: 576px )
+			order: 2
+
+	.card_img_news_image_left
+		@media screen and ( max-width: 1024.98px )
+			margin-bottom: 30px
+			order: 1
+			margin-top: 30px
+		.item__img
+			width: 100%
+			max-height: 100%
+			height: 600px
+			a
+				width: 100%
+				max-height: 100%
+				height: 600px
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+			@media screen and ( max-width: 576px )
+				max-height: 100%
+				height: 285px
+				img
+					height: 100%
+	.card_img_news_image_right
+		@media screen and ( max-width: 576px )
+			margin-bottom: 30px
+			order: 1
+			margin-top: 30px
+		.item__img
+			width: 100%
+			max-height: 100%
+			height: 600px
+			a
+				width: 100%
+				max-height: 100%
+				height: 600px
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+			@media screen and ( max-width: 576px )
+				max-height: 100%
+				height: 285px
+				img
+					height: 100%
+
+	.block-item 
+		position: relative
+		cursor: pointer
+		.item__img 
+			a
+				width: 100%
+				max-height: 100%
+				height: 400px
+				img
+					width: 100%
+					height: 100%
+			.album
+				margin-top: 15px
+				position: absolute
+				bottom: 0
+				color: #ffffff
+				width: 100%
+				height: 60px
+				background: rgba(#222, 0.5)
+				display: flex
+				justify-content: center
+				align-items: center
+				.caption
+					font-size: 18px
+					color: #ffffff
+				@media screen and ( max-width: 576px )
+					display: none
+			&:hover
+				.album
+					display: none
+		.item__imgg
+			width: 100%
+			height: 100%
+			margin-bottom: 30px
+			img 
+				width: 100%
+				height: 100%
+			.img_icon
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-top: 15px
+				position: absolute
+				bottom: 0
+				top: 0
+				left: 45%
+				em
+					color: #ffffff
+					padding: 15px
+					// background: rgba(#ca2530,.8)
+					border-radius: 50%
+		.item__img-hover 
+			position: absolute
+			left: 50%
+			top: 50%
+			width: 0
+			height: 0
+			transform-origin: center
+			opacity: 0
+			visibility: hidden
+			transition: .2s all ease-in-out
+			background-color: rgba( #333,.5)
+			pointer-events: none
+			.content 
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 100%
+				visibility: hidden
+				opacity: 0
+				transition: .2s all ease-in-out
+				.icon
+					em
+						color: #ea2531
+						font-size: 39px
+						display: flex
+						justify-content: center
+						align-items: center
+					.desc
+						display: flex
+						justify-content: center
+						align-items: center
+						margin-top: 15px
+						h4
+							font-size: 18px;
+							color: rgb(233, 36, 49)
+							font-weight: bold
+							// line-height: 2.833
+						h5
+							font-size: 18px
+							color: rgb(233, 36, 49)
+							font-weight: bold
+							// line-height: 2.833
+			
+		@media screen and (min-width: 1024px) 
+			&:hover 
+				.item__img-hover 
+					visibility: visible
+					opacity: 1
+					top: 0
+					left: 0
+					height: 100%
+					width: 100%
+
+					.content 
+						opacity: 1
+						visibility: visible
+		@media(max-width: 1024.98px) 
+			width: 100%
+			height: unset
+			.item__img-hover 
+				opacity: 1
+				visibility: visible
+				width: 100%
+				height: 100%
+				transform: none
+				top: 0
+				left: 0
+				border-radius: 10px
+				.content 
+					opacity: 1
+					visibility: visible
+					.desc
+						h5 
+							font-size: 16px
+		@media(max-width: 576px) 
+			width: 100%
+			height: unset
+			.item__img-hover 
+				opacity: 1
+				visibility: visible
+				width: 100%
+				height: 100%
+				transform: none
+				top: 0
+				left: 0
+				border-radius: 10px
+				.content 
+					opacity: 1
+					visibility: visible
+					.desc
+						h5 
+							font-size: 14px
+
+// .middle-fullwidth
+// 	.card_img_news_image_left
+// 		.block-item
+// 			@media screen and ( max-width: 576px )
+// 				margin-top: 30px
+// 			.item__img
+// 				a
+// 					img
+// 						width: 100%
+// 						height: 400px
+// 						object-fit: cover
+// 						@media screen and ( max-width: 576px )
+// 							height: 185px
+// 	.col-lg-6
+// 		.row
+// 			.col-lg-6
+// 				.block-item
+// 					.item__img
+// 						a
+// 							img
+// 								width: 100%
+// 								height: 185px
+// 								object-fit: cover

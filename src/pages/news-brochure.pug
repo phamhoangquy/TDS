@@ -1,0 +1,11 @@
+extends _layout.pug
+
+block var
+	- var title = 'Tin tức - Brochure'
+	- var bodyClass = 'news-brochure-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/news-list/news-brochure/index.pug
+	include ../components/pagination/index.pug
