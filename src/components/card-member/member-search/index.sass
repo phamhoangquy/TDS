@@ -1,0 +1,84 @@
+.block_member-search
+	background-image: url('../img/card-member/bg-member.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 55px 0 55px 0
+	.row
+		display: flex
+		justify-content: center
+		align-items: center
+
+	.wrap-form
+		border-radius: 10px
+		padding: 40px
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0px 4px 7.4px 2.6px rgba(0, 0, 0, 0.05)
+		@media screen and(max-width:1025px)
+			margin: 0
+			padding: 0 10px
+		@media screen and ( max-width: 576px )
+			padding: 40px
+		.text
+			padding-bottom: 40px
+			p
+				font-size: 20px
+				color: #111111
+				text-align: center
+		.frm-btnwrap
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-top: 20px
+			.frm-btn
+				input[type="submit"]
+					width: 160px
+					height: 40px
+					color: #ffffff
+					background: #ea2531
+					cursor: pointer
+					font-size: 16px
+					font-weight: 400
+					text-align: center
+					border: none
+					border-radius: 50px
+					// margin-right: 10px
+					&:nth-last-child(2)
+						display: none
+					@media screen and ( max-width:1024px  )
+						input 
+							padding: 0 15px
+		.form-group
+			margin: 5px 0 20px 0
+			.icon
+				position: absolute
+				bottom: 4px
+				left: 25px
+			span
+				color: #ffffff
+				font-size: 13px
+				&.fa-exclamation-triangle
+					color: firebrick
+			input[type="text"]
+				padding-left: 40px
+				border-top: none
+				border-right: none
+				border-left: none
+				border-bottom: 1px solid #f3f3f3
+				height: 42px
+				width: 100%
+				color: #333
+				background: #ffffff
+				transition: .3s all ease-in-out
+
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+			label
+				color: #666666
+				font-size: 14px
+				font-weight: 400
+				margin-bottom: 5px
+			textarea
+				height: 10rem
+				padding: 10px 0 0 20px

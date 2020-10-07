@@ -30,6 +30,21 @@ const webNavMobileMapping = new MappingListener({
     breakpoint: 1024.98,
 }).watch();
 
+// Modal
+$('.readmore').click(function() {
+    $('.modal').toggleClass("show");
+    $('.overlay').toggleClass("show");
+});
+$('.overlay').click(function() {
+    $(this).toggleClass("click");
+    $('.modal').toggleClass("show");
+    $('.overlay').toggleClass("show");
+});
+$('.close-btn').click(function() {
+    $('.modal').toggleClass("show");
+    $('.overlay').toggleClass("show");
+});
+
 function wowBookInit() {
     $("#wowbook").wowBook({
         width: 1240,
