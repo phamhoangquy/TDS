@@ -1,0 +1,25 @@
+section.form_book
+	.container
+		.title Đặt bàn
+		.row
+			.col-xl-6.col-md-6.block_form
+				.content_form Vui lòng điền đầy đủ thông tin và yêu cầu đặt bàn. Chúng tôi sẽ liên hệ ngày cho bạn:
+				.form
+					.row
+						.col-xl-12.col-md-12
+							input.form_control(type='text' placeholder="Họ tên (*)")
+						.col-xl-6.col-md-6
+							input.form_control(type='text' placeholder="Số điện thoại (*)")
+						.col-xl-6.col-md-6
+							input.form_control(type='text' placeholder="Email (*)")
+					label Chọn chi nhánh (*)
+					.row
+						.col-xl-12.col-md-12
+							input.form_control(type='text' placeholder="Sở thích (*)")
+						.col-xl-12.col-md-12
+							input.form_control(type='text' placeholder="Ghi chú (*)")
+							button.submit(type="submit") Đặt bàn
+								i.lnr.lnr-arrow-right
+			.col-xl-6.col-md-6.block_img
+				.img
+					img(src="img/book/1.png", alt="")
