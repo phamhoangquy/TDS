@@ -1,0 +1,142 @@
+.block_menu
+	background-color: #fdfcf9
+	padding: 55px 0 0 0
+	.side-navigation-wrapper
+		.title-wrapper
+			padding: 20px
+			background: #111111
+			h2
+				color: #ffffff
+				font-size: 20px
+				font-weight: 600
+				text-align: center
+			@media screen and(max-width:1025px)
+				h2
+					font-size: 16px
+		.side-navigation
+			list-style-type: none
+			background-color: rgb(255, 255, 255)
+			box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.03)
+			margin: 0
+			padding: 0
+			transition: .3s all  ease-in-out
+			>li
+				transition: .3s all  ease-in-out
+				&.open
+					background: #ffffff
+					.title
+						a
+							color: #333333
+							font-weight: 600
+							font-size: 1rem
+							&:hover
+								color: #ea2531
+							&:active
+								color: #ea2531
+					.nav-sub
+						display: block
+					.nav-sub-2
+						display: none
+				&:last-child
+					.title
+						border-bottom: 0
+				.title
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding: 14px 20px
+					min-height: 40px
+					transition: .3s all  ease-in-out
+					a
+						font-weight: 600
+						color: #333333
+						font-size: 1rem
+				&.drop-down
+					.title
+						a
+							font-weight: 600
+							color: #333333
+							font-size: 1rem
+							
+						em
+							width: 30%
+							text-align: right
+				.nav-sub
+					list-style: none
+					display: none
+					li
+						
+						&:last-child
+							a
+								padding-bottom: 20px
+						&.active
+							a
+								color: #ea2531
+						a
+							transition: .3s all  ease-in-out
+							font-size: 16px
+							font-weight: 600
+							padding: 10px 0
+							display: block
+							color: #333333
+							position: relative
+							&::before
+								content: ''
+								width: 100px
+								height: 1px
+								background: red
+				// 		.title-2
+				// 			display: flex
+				// 			justify-content: space-between
+				// 			align-items: center
+				// 			padding-right: 20px
+				// .nav-sub-2
+				// 	list-style: none
+				// 	padding: 0
+				// 	li 
+				// 		a 
+				// 			display: block
+	
+	.block_name_category
+		width: 100%
+		height: 50px
+		padding: 0 25px
+		background-color: #fff
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.name_category
+			font-size: 18px
+		.area_category
+			font-size: 14px
+	
+	.card_img
+		margin-top: 30px
+		background-color: #fff
+		padding: 35px
+		text-align: center
+		border: 1px solid #e5e5e5
+		&:hover
+			border: 1px solid #000
+		@media screen and ( max-width: 576px )
+			padding: 20px
+		.name_food
+			font-size: 16px
+			padding-top: 10px
+		.item-money
+			cursor: pointer
+			ul
+				list-style: none
+				padding: 0
+				li
+					.discount
+						text-decoration: line-through
+						font-size: 14px
+						color: #999999
+						padding-top: 24px
+						line-height: 14px
+						@media screen and ( max-width: 576px )
+							padding-top: 14px
+					.price
+						color: #e82429
+						font-size: 16px

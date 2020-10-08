@@ -1,4 +1,4 @@
-section.block_menu
+section.block_menu-food
 	.container
 		.title_menu 
 			h2 Thực đơn
@@ -7,18 +7,28 @@ section.block_menu
 				.block_title_food
 					.title_food
 						h2 Thực đơn
-				.block_collapsible
-					- for (i=1; i<=5; i++)
-						button.collapsible Món mới
-						.content
-							a(href="") Shushi
-							a(href="") Sashimi
+				ul.block_collapsible
+					- for (i=1; i<=6; i++)
+						li
+							a.collapsible Món mới
+							ul.content
+								li
+									a(href="") Shushi
+								li
+									a(href="") Shushi
+								li
+									a(href="") Shushi
+
 			.col-xl-9.col-md-9
 				.block_name_category
 					.name_category 
 						h3 Cơm văn phòng
 					.area_category 
 						p Khu vực
+						select
+							option TP.HCM
+							option Hà Nội
+							option Lâm Đồng
 				.row
 					- for (i=1; i<=9; i++)
 						.col-xl-4.col-md-6.col-xs-6

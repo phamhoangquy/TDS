@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Tra cứu thành viên'
+	- var bodyClass = 'member-search-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/card-member/member-search/index.pug
