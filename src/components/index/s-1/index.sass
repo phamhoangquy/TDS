@@ -1,0 +1,101 @@
+.block_s-1
+	background-image: url('../img/s-1/bg-s-1.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 85px 0 85px 0
+
+	.card_img
+		.img
+			max-width: 100%
+			max-height: 100%
+			width: 100%
+			height: 375px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+			@media screen and ( max-width: 576px )
+				max-width: 100%
+				max-height: 100%
+				width: 100%
+				height: 345px
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+	.big-content
+		border: 1px solid #999999
+		background: none
+		height: 375px
+		padding: 35px 40px
+		@media screen and ( max-width: 576px )
+			margin-top: 30px
+			margin-bottom: 30px
+		.content_s-1
+			p
+				color: #111111
+				font-size: 18px
+				text-align: center
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 7
+				-o-text-overflow: ellipsis
+				display: -webkit-box
+				overflow: hidden
+				height: 190px
+				text-overflow: ellipsis
+		.btn-view-more
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-top: 30px
+			a
+				box-shadow: 0px 5px 20px 0px rgba(232, 36, 41, 0.25)
+				background: #ea2531
+				color: #ffffff
+				display: flex
+				justify-content: center
+				align-items: center
+				border-radius: 50px
+				width: 160px
+				height: 45px
+				text-transform: uppercase
+			&:hover
+				a
+					background: #111111
+					color: #ffffff
+	.img_small
+		max-width: 100%
+		max-height: 100%
+		width: 100%
+		height: 180px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.col-lg-4
+		padding-left: 0
+		@media screen and ( max-width: 576px )
+			padding-left: 15px
+		.row
+			.col-lg-6
+				padding-right: 0
+				&:nth-child(2)
+					@media screen and ( max-width: 1600px )
+						padding-right: 15px
+					@media screen and ( max-width: 1024.98px )
+						padding-right: 15px
+					@media screen and ( max-width: 576px )
+						padding-right: 15px
+			.col-lg-12
+				margin-top: 15px
+	.img_big
+		max-width: 100%
+		max-height: 100%
+		width: 100%
+		height: 180px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+		
