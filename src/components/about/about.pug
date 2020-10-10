@@ -19,21 +19,20 @@ section.about_2
 	.container
 		.title
 			h2 Lịch sử hình thành
-		.row
-			.col-lg
-				.swiper-container
-					.swiper-wrapper
-						- for (i=1; i<=6; i++)
-							.swiper-slide
-								.card_text
-									.date
-										p 2007
-									.text
-										p Nhà hàng TOKYO Deli đầu tiên được mở tại Phú Mỹ Hưng. Nhà hàng TOKYO Deli đầu tiên được mở tại Phú Mỹ Hưng. Nhà hàng TOKYO Deli đầu tiên được mở tại Phú Mỹ Hưng.
-				.nav-arrow-prev
-					i.ri-arrow-left-s-line
-				.nav-arrow-next
-					i.ri-arrow-right-s-line
+		.about_slide
+			.swiper-container
+				.swiper-wrapper
+					- for (i=1; i<=6; i++)
+						.swiper-slide
+							.card_text
+								.date
+									p 2007
+								.text
+									p Nhà hàng TOKYO Deli đầu tiên được mở tại Phú Mỹ Hưng. Nhà hàng TOKYO Deli đầu tiên được mở tại Phú Mỹ Hưng. Nhà hàng TOKYO Deli đầu tiên được mở tại Phú Mỹ Hưng.
+			.nav-arrow-prev
+				i.ri-arrow-left-s-line
+			.nav-arrow-next
+				i.ri-arrow-right-s-line
 
 section.about_3
 	.container
@@ -47,7 +46,7 @@ section.about_3
 							img(src="img/about/2.jpg", alt="")
 						.block_content
 							.content
-								p Tầm nhìn
+								h3 Tầm nhìn
 							.text
 								p Mang ẩm thực Nhật Bản đến với khách hàng thông qua dịch vụ ăn uống an toàn chất lượng và chuyên nghiệp.
 								br
@@ -63,3 +62,11 @@ section.about_4
 			p Không gian của Tokyo Deli  Sushi lấy cảm hứng từ không gian truyển thống của người Nhật Bản Đó là một cách sắp xếp không gian nội thất đơn giản, dễ chịu, mang lại bầu không khí bù đắp sự căng thẳng khiến bạn cảm thấy thư giãn hơn.
 			br
 			p Phong cách thiết kế tinh thần TOKYO DELI  đem đến một cảm giác đầm ấm, yên bình. Các thực khách sẽ có cảm giác thoải mái như đang dùng bữa tại gia đình.
+
+		.block_img
+			.row
+				-for(i=1; i<=4; i++)
+					.col-xl-3.col-md-3.col-sm-6.col-xs-6
+						.card_img
+							.img
+								img(src="./img/about/4.jpg", alt="")
