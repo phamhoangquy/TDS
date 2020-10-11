@@ -1,7 +1,12 @@
 .block_menu
+	background-image: url('../img/card-member/bg-member.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
 	background-color: #fdfcf9
-	padding: 55px 0 0 0
+	padding: 55px 0 55px 0
 	.side-navigation-wrapper
+		margin-bottom: 30px
 		.title-wrapper
 			padding: 20px
 			background: #111111
@@ -24,6 +29,7 @@
 				transition: .3s all  ease-in-out
 				&.open
 					background: #ffffff
+					cursor: pointer
 					.title
 						a
 							color: #333333
@@ -33,6 +39,8 @@
 								color: #ea2531
 							&:active
 								color: #ea2531
+						em
+							cursor: pointer
 					.nav-sub
 						display: block
 					.nav-sub-2
@@ -51,6 +59,10 @@
 						font-weight: 600
 						color: #333333
 						font-size: 1rem
+						&:hover
+							color: #ea2531
+						&:active
+							color: #ea2531
 				&.drop-down
 					.title
 						a
@@ -62,6 +74,7 @@
 							width: 30%
 							text-align: right
 				.nav-sub
+					cursor: pointer
 					list-style: none
 					display: none
 					li
@@ -83,8 +96,8 @@
 							&::before
 								content: ''
 								width: 100px
-								height: 1px
-								background: red
+								height: 5px
+								color: #ea2531
 				// 		.title-2
 				// 			display: flex
 				// 			justify-content: space-between

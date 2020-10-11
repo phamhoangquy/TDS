@@ -1,0 +1,38 @@
+section.block_s-6
+	.home_slide
+		.title
+			h2 Tin tức
+			.nav-arrow
+				.nav-arrow-prev
+					i.ri-arrow-left-line
+				.nav-arrow-next
+					i.ri-arrow-right-line
+		.swiper-container
+			.swiper-wrapper
+				- for (i=1; i<=8; i++)
+					.swiper-slide
+						.card
+							.card_img
+								.img
+									img(src="./img/news-list/news-1.png", alt="")
+							.content_news
+								.date
+									time 01.06.2020
+								.card_title_news
+									a(href="") Khai trương hàng tháng thứ 15, Tokyo Deli âm thầm chinh phục giới trẻ
+								.btn-icon
+									a(href="") Xem thêm
+										span.ri-arrow-right-circle-fill
+			.swiper-scrollbar
+	.container
+		.row
+			.col-xl-2
+			.col-xl-8
+				.block_card
+					.img
+						img(src="./img/index_s-6/1.jpg", alt="")
+						.card_content
+							p Hệ hống cửa hàng
+							h3 Tìm cửa hàng Tokyo Deli gần bạn nhất
+							.btn_card
+								a(href="") Tìm cửa hàng
