@@ -1,10 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('.menu-mobile-toggle').click(function() {
+    $('.menu-mobile-toggle').click(function () {
         $('.offcanvas-wrap').fadeIn().addClass('offcanvas-open')
     })
 
-    $('.offcanvas-wrap').click(function(e) {
+    $('.offcanvas-wrap').click(function (e) {
         if (e.target !== e.currentTarget) return
         $('.offcanvas-wrap').fadeOut().removeClass('offcanvas-open')
     })
@@ -32,16 +32,16 @@ const webNavMobileMapping = new MappingListener({
 }).watch();
 
 // Modal
-$('.readmore').click(function() {
+$('.readmore').click(function () {
     $('.modal').toggleClass("show");
     $('.overlay').toggleClass("show");
 });
-$('.overlay').click(function() {
+$('.overlay').click(function () {
     $(this).toggleClass("click");
     $('.modal').toggleClass("show");
     $('.overlay').toggleClass("show");
 });
-$('.close-btn').click(function() {
+$('.close-btn').click(function () {
     $('.modal').toggleClass("show");
     $('.overlay').toggleClass("show");
 });
@@ -131,6 +131,41 @@ function swiperInit() {
         }
     });
 
+    var TinhthanSwiper = new Swiper(".tinhthan_slide .swiper-container", {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        effect: 'coverflow',
+        coverflowEffect: {
+            rotate: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        // breakpoints: {
+        //     576: {
+        //         slidesPerView: 2,
+        //         spaceBetween: 10,
+        //         scrollbar: {
+        //             dragSize: 165,
+        //         }
+        //     },
+        //     1024: {
+        //         slidesPerView: 3,
+        //         spaceBetween: 30,
+        //         scrollbar: {
+        //             dragSize: 215,
+        //         }
+        //     },
+        //     1200: {
+        //         slidesPerView: 4,
+        //         spaceBetween: 30
+        //     }
+        // }
+    });
     var HomenewsSwiper = new Swiper(".home_slide .swiper-container", {
         slidesPerView: 5,
         spaceBetween: 30,
@@ -173,7 +208,7 @@ function swiperInit() {
     var i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.maxHeight) {
@@ -189,7 +224,7 @@ function sideNavigation() {
     let trigger = $('.side-navigation-wrapper .side-navigation .title em');
     let close = $('.side-navigation-wrapper .side-navigation  .nav-sub');
     let parent = $('.side-navigation-wrapper .side-navigation  li');
-    trigger.on('click', function(e) {
+    trigger.on('click', function (e) {
         e.preventDefault();
         if (!$(this).parent().parent().hasClass("open")) {
             close.slideUp();
@@ -208,7 +243,7 @@ function sideNavigation2() {
     let trigger = $('.side-navigation-wrapper .side-navigation .title-2 em');
     let close = $('.side-navigation-wrapper .side-navigation  .nav-sub-2');
     let parent = $('.side-navigation-wrapper .side-navigation  li');
-    trigger.on('click', function(e) {
+    trigger.on('click', function (e) {
         e.preventDefault();
         if (!$(this).parent().parent().hasClass("open")) {
             close.slideUp();
