@@ -1,48 +1,49 @@
 section.block_s-3
-	.container
-		.block-title
-			.head-title
-				h1 Thực đơn
-		.block_area
-			p Chọn khu vực:
-			select
-				option
-					p Thành phố HCM
-		ul.menu-food-top
-			li
-				a.active Món mới
-			li
-				a Cơm văn phòng
-			li
-				a Combo
-			li
-				a Set
-			li
-				a Bento box
-			li
-				a Party set
-
-		ul.name-food-bottom
-			li
-				a.active Tất cả
-			- for (i=0;i<=16;i++)
+	.container-custom
+		.container
+			.block-title
+				.head-title
+					h1 Thực đơn
+			.block_area
+				p Chọn khu vực:
+				select
+					option
+						p Thành phố HCM
+			ul.menu-food-top
 				li
-					a Sushi
+					a.active Món mới
+				li
+					a Cơm văn phòng
+				li
+					a Combo
+				li
+					a Set
+				li
+					a Bento box
+				li
+					a Party set
 
-		.row
-			- for (i=1; i<=11; i++)
-				.col-6.col-sm-4.col-lg-3.col-xl-2-custom
-					a(href="menu-detail.html")
-						.food
-							.card_img
-								.img
-									img(src="./img/s-5/food-1.png", alt="")
-							.desc-food
-								.name_food
-									a(href="") Tô cơm cá hồi
-								.discount
-									p 55.000 VND
-								.price
-									p 62.000 VND
-		.btn-view-more
-			a(href="") xem thêm
+			ul.name-food-bottom
+				li
+					a.active Tất cả
+				- for (i=0;i<=16;i++)
+					li
+						a Sushi
+
+			.row
+				- for (i=1; i<=10; i++)
+					.col-6.col-sm-6.col-lg-2
+						a(href="menu-detail.html")
+							.food
+								.card_img
+									.img
+										img(src="./img/s-5/food-1.png", alt="")
+								.desc-food
+									.name_food
+										a(href="") Tô cơm cá hồi
+									.discount
+										p 55.000 VND
+									.price
+										p 62.000 VND
+			.btn-view-more
+				a(href="") xem thêm

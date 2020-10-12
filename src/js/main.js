@@ -104,40 +104,77 @@ function swiperInit() {
         }
     });
     var homeNewsSwiper = new Swiper(".block_s-6 .swiper-container", {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        freeMode: true,
-        // autoplay: {
-        //     delay: 5000,
-        // },
+        spaceBetween: 25,
+        autoplay: {
+            delay: 2000,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
         navigation: {
             nextEl: '.block_s-6 .nav-arrow-next',
             prevEl: '.block_s-6 .nav-arrow-prev',
         },
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            dragSize: 472,
-        },
         breakpoints: {
-            576: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-                scrollbar: {
-                    dragSize: 165,
-                }
+            320: {
+                slidesPerView: 1,
             },
-            1024: {
+            400: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 1,
+            },
+            768: {
                 slidesPerView: 3,
-                spaceBetween: 30,
-                scrollbar: {
-                    dragSize: 215,
-                }
             },
-            1200: {
-                slidesPerView: 4,
-                spaceBetween: 30
-            }
-        }
+            1025: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 5,
+            },
+            1600: {
+                slidesPerView: 5,
+            },
+        },
+        // spaceBetween: 25,
+        // // freeMode: true,
+        // autoplay: {
+        //     delay: 4000,
+        // },
+        // navigation: {
+        //     nextEl: '.block_s-6 .nav-arrow-next',
+        //     prevEl: '.block_s-6 .nav-arrow-prev',
+        // },
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        //     dragSize: 472,
+        // },
+        // breakpoints: {
+        //     320: {
+        //         slidesPerView: 1,
+        //     },
+        //     400: {
+        //         slidesPerView: 1,
+        //     },
+        //     480: {
+        //         slidesPerView: 1,
+        //     },
+        //     768: {
+        //         slidesPerView: 3,
+        //     },
+        //     1025: {
+        //         slidesPerView: 3,
+        //     },
+        //     1440: {
+        //         slidesPerView: 5,
+        //     },
+        //     1600: {
+        //         slidesPerView: 5,
+        //     },
+        // },
     });
     var brandSwiper = new Swiper(".about_2 .swiper-container", {
         // Optional parameters
