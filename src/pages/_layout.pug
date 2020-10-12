@@ -17,10 +17,11 @@ html(lang="en")
 
 	body(class=bodyClass)
 		block header
-			//- include ../components/_global/header.pug
+			include ../components/_global/header.pug
 		main
 			block main
 		block footer
 			include ../components/_global/footer.pug
+		include ../components/_global/tool.pug
 		script(src="./js/core.min.js")
 		script(src="./js/main.min.js")

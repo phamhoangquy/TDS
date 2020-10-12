@@ -1,0 +1,201 @@
+.block_booking-menu
+	background-image: url('../img/card-member/bg-member.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 50px 0
+	@media screen and ( max-width: 576px )
+		padding: 30px 0
+
+	.form-booking
+		padding: 30px
+		border-radius: 10px
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0 3px 20px 0 rgba(0,0,0,.1)
+		.wrap-form
+			@media screen and(max-width:1025px)
+				margin: 0
+				padding: 0 10px
+			.frm-btnwrap
+				// position: absolute
+				bottom: 28px
+				left: 0
+				// @media screen and(max-width:1025px)
+				// 	margin: 0 !important
+				@media screen and(max-width:767px)
+					position: static
+					display: block
+				.frm-btn
+					input
+						color: #ffffff
+						background: #c80916
+						cursor: pointer
+						font-size: 16px
+						font-weight: 400
+						text-align: center
+						border: none
+						box-shadow: 0px 5px 20px 0px rgba(232, 36, 41, 0.25)
+						width: 150px
+						height: 50px
+						border-radius: 50px
+						margin-right: 10px
+						&:nth-last-child(2)
+							display: none
+						&:focus
+							outline: none
+						&:hover
+							background: #111111
+							color: #ffffff
+						@media screen and ( max-width:1024px  )
+							input 
+								padding: 0 15px
+			.form-group
+				margin: 5px 0 20px 0
+				span
+					color: #111111
+					font-size: 14px
+					position: absolute
+					bottom: 5px
+					right: 15px
+					&.fa-exclamation-triangle
+						color: firebrick
+				input,textarea
+					// padding-left: 20px
+					border-top: none
+					border-right: none
+					border-left: none
+					border-bottom: 1px solid #f3f3f3
+					height: 42px
+					width: 100%
+					color: #333
+					background: none
+					transition: .3s all ease-in-out
+					&:focus
+						outline: none
+						// box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+				label
+					color: #333333
+					font-size: 16px
+					font-weight: 800
+					margin-bottom: 5px
+				select
+					width: 100%
+					height: 42px
+					border-top: none
+					border-right: none
+					border-left: none
+					border-bottom: 1px solid #f3f3f3
+				textarea
+					margin-top: 100px
+					// height: 8em
+					// padding: 10px 0 0 20px
+	.col-lg-6
+		&:nth-child(2)
+			padding-left: 0
+			@media screen and ( max-width: 1440px )
+				padding-left: 15px
+			@media screen and ( max-width: 576px )
+				padding-left: 15px
+	.card_img
+		.img
+			max-width: 100%
+			width: 100%
+			max-height: 100%
+			height: 660px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				border-radius: 0 10px 10px 0
+	// .content_form
+	// 	p
+	// 		font-size: 20px
+	// 		margin-bottom: 45px
+	// 	@media screen and ( max-width: 1024px )
+	// 		margin-bottom: 10px
+	// 	@media screen and ( max-width: 767px )
+	// 		color: #fff
+	// 	@media screen and ( max-width: 576px )
+	// 		margin-bottom: 20px
+	// 		font-size: 18px
+	// .col-xl-6
+	// 	padding: 0
+	// 	@media screen and ( max-width: 1020px )
+	// 		padding-left: 15px
+	// 		padding-right: 15px
+	// .block_form
+	// 	background-color: #fff
+	// 	border-radius: 10px 0 0 10px
+	// 	padding: 20px 40px
+	// 	@media screen and ( max-width: 767px )
+	// 		background-image: url('../img/book/2.jpg')
+	// 		background-position: center
+	// 		background-repeat: no-repeat
+	// 		background-size: cover
+	// 		border-radius: 0
+	// 	@media screen and ( max-width: 768px )
+	// 		padding: 10px 30px
+	// 	.form
+	// 		.col-xl-6
+	// 			padding-left: 15px
+	// 			padding-right: 15px
+
+	// 		.form_control
+	// 			width: 100%
+	// 			border: 0
+	// 			margin-bottom: 25px
+	// 			border-bottom: 1px solid #e1e1e1
+	// 			font-size: 16px
+	// 			background: rgba(0,0,0,0.001)
+	// 			&::placeholder
+	// 				color: #aaaaaa
+	// 			&:focus
+	// 				border-bottom: 1px solid #000
+	// 			@media screen and ( max-width: 1024px )
+	// 				margin-bottom: 20px
+	// 			@media screen and ( max-width: 768px )
+	// 				margin-bottom: 15px
+	// 			@media screen and ( max-width: 767px )
+	// 				color: #fff
+	// 				&:focus
+	// 					border-bottom: 1px solid #fff
+	// 					&::placeholder
+	// 						color: #fff
+	// 		select
+	// 			width: 100%
+	// 			border: 0
+	// 			border-bottom: 1px solid #e1e1e1
+	// 		label
+	// 			font-weight: bold
+	// 			margin-bottom: 20px					
+	// 			@media screen and ( max-width: 767px )
+	// 				color: #fff
+	// 		.submit
+	// 			width: 205px
+	// 			height: 50px
+	// 			border: 2px solid #e82429
+	// 			background-color: #e82429
+	// 			color: #fff
+	// 			font-size: 16px
+	// 			text-transform: uppercase
+	// 			border-radius: 50px
+	// 			@include center
+	// 			@media screen and ( max-width: 576px )
+	// 				font-size: 14px
+	// 				width: 150px
+	// 				height: 40px
+	// 			&:hover
+	// 				border: 2px solid #e82429
+	// 				color: #e82429
+	// 				background-color: transparent
+	// 			i
+	// 				padding-top: 5px
+	// 				margin-left: 10px
+
+	// .block_img
+	// 	@media screen and ( max-width: 767px )
+	// 		display: none
+	// 	.img
+	// 		img
+	// 			width: 100%
+	// 			object-fit: cover

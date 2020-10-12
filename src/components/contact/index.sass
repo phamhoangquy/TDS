@@ -1,0 +1,166 @@
+.block_contact
+	background-image: url('../img/card-member/bg-member.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 55px 0 0 0
+	.icon-contact
+		padding: 30px
+		border-radius: 10px
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0 3px 20px 0 rgba(0,0,0,.1)
+		.card_img
+			display: flex
+			justify-content: center
+			align-items: center
+			.img
+				max-width: 100%
+				max-height: 100%
+				height: 80px
+				width: 80px
+				img
+					width: 100%
+					height: 100%
+		.content-icon
+			ul
+				padding: 0
+				list-style: none
+				text-align: center
+				li
+					&:nth-child(1)
+						padding-top: 20px
+					&:nth-child(2)
+						padding-top: 10px
+					strong
+						text-transform: uppercase
+						font-size: 15px
+						color: #333333
+					p
+						font-size: 14px
+						color: #666666
+
+.block_form
+	background-image: url('../img/card-member/bg-member.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 60px 0 60px 0
+	.bg-form
+		padding: 30px
+		border-radius: 10px
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0 3px 20px 0 rgba(0,0,0,.1)
+	.text
+		padding-bottom: 20px
+		@media screen and ( max-width: 576px )
+			padding-top: 30px
+	.wrap-form
+		@media screen and(max-width:1025px)
+			margin: 0
+			padding: 0 10px
+		.frm-btnwrap
+			// position: absolute
+			bottom: 28px
+			left: 0
+			// @media screen and(max-width:1025px)
+			// 	margin: 0 !important
+			@media screen and(max-width:767px)
+				position: static
+				display: block
+			.frm-btn
+				input
+					color: #ffffff
+					background: #c80916
+					cursor: pointer
+					font-size: 16px
+					font-weight: 400
+					text-align: center
+					border: none
+					box-shadow: 0px 5px 20px 0px rgba(232, 36, 41, 0.25)
+					width: 150px
+					height: 50px
+					border-radius: 50px
+					margin-right: 10px
+					&:nth-last-child(2)
+						display: none
+					&:focus
+						outline: none
+					&:hover
+						background: #111111
+						color: #ffffff
+					@media screen and ( max-width:1024px  )
+						input 
+							padding: 0 15px
+		.form-group
+			margin: 5px 0 20px 0
+			span
+				color: #b2b2b2
+				font-size: 13px
+				&.fa-exclamation-triangle
+					color: firebrick
+			input,textarea
+				// padding-left: 20px
+				border-top: none
+				border-right: none
+				border-left: none
+				border-bottom: 1px solid #f3f3f3
+				height: 42px
+				width: 100%
+				color: #333
+				background: none
+				transition: .3s all ease-in-out
+				&:focus
+					outline: none
+					// box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+			label
+				color: #666666
+				font-size: 14px
+				font-weight: 400
+				margin-bottom: 5px
+			textarea
+				margin-top: 100px
+				// height: 8em
+				// padding: 10px 0 0 20px
+		.frm-captcha
+			display: flex
+			@media screen and ( max-width: 576px )
+				display: flex
+				flex-wrap: wrap
+			.frm-captcha-input
+				order: 2
+				@media screen and ( max-width: 1200px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+					width: 40%
+				@media screen and ( max-width: 1024px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+				@media screen and ( max-width: 768px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+				
+				@media screen and ( max-width: 576px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+					width: 100%
+				@media screen and ( max-width: 576px )
+					padding-top: 30px
+					order: 1
+		.RadCaptcha_Default
+			width: 25%
+			max-width: 25%
+			@media screen and ( max-width: 576px )
+				flex: 0 0 100%
+				max-width: 100%
+
+	.map-wrapper
+		border-radius: 10px
+	

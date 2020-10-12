@@ -486,6 +486,7 @@ template {
 .col-xl-11,
 .col-xl-12,
 .col-xl,
+.col-xl-2-cus,
 .col-xl-auto {
     position: relative;
     width: 100%;
@@ -506,6 +507,12 @@ template {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
+}
+
+.col-xl-2-custom {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
 }
 
 .col-1 {
