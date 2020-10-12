@@ -80,6 +80,65 @@ function swiperInit() {
             clickable: "true"
         }
     });
+    var MenuSwiper = new Swiper(".other_food .swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        navigation: {
+            nextEl: '.nav-arrow-next',
+            prevEl: '.nav-arrow-prev',
+        },
+        breakpoints: {
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            990: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            }
+        }
+    });
+    var homeNewsSwiper = new Swiper(".block_s-6 .swiper-container", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        freeMode: true,
+        // autoplay: {
+        //     delay: 5000,
+        // },
+        navigation: {
+            nextEl: '.block_s-6 .nav-arrow-next',
+            prevEl: '.block_s-6 .nav-arrow-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            dragSize: 472,
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                scrollbar: {
+                    dragSize: 165,
+                }
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                scrollbar: {
+                    dragSize: 215,
+                }
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            }
+        }
+    });
     var brandSwiper = new Swiper(".about_2 .swiper-container", {
         // Optional parameters
         speed: 1000,
