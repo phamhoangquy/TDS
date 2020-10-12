@@ -1,0 +1,44 @@
+section.block_menu-food
+	.container
+		.title_menu 
+			h2 Thực đơn
+		.row
+			.col-xl-3.col-md-3
+				.block_title_food
+					.title_food
+						h2 Thực đơn
+				ul.block_collapsible
+					- for (i=1; i<=6; i++)
+						li
+							a.collapsible Món mới
+							ul.content
+								li
+									a(href="") Shushi
+								li
+									a(href="") Shushi
+								li
+									a(href="") Shushi
+
+			.col-xl-9.col-md-9
+				.block_name_category
+					.name_category 
+						h3 Cơm văn phòng
+					.area_category 
+						p Khu vực
+						select
+							option TP.HCM
+							option Hà Nội
+							option Lâm Đồng
+				.row
+					- for (i=1; i<=9; i++)
+						.col-xl-4.col-md-6.col-xs-6
+							a(href="menu-detail.html")
+								.card_img
+									.img
+										img(src="img/menu/1.png", alt="")
+									.name_food 
+										p Tô cơm cá hồi
+									.discount
+										p 55.000 VND
+									.price
+										p 62.000 VND

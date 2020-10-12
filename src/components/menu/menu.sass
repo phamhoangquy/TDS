@@ -1,0 +1,143 @@
+.block_menu-food
+	background-color: #fdfcf9
+	padding-bottom: 65px
+	.title_menu
+		h2
+			font-size: 30px
+			padding-top: 50px
+			padding-bottom: 20px
+			text-align: center
+			font-family: "Montserrat-ExtraBold"
+			@media screen and ( max-width: 576px )
+				padding-top: 30px
+
+	.block_title_food
+		width: 100%
+		height: 50px
+		background-color: #111111
+		display: flex
+		align-items: center
+		justify-content: center
+		.title_food
+			h2
+				font-family: "Montserrat-Bold"
+				font-size: 18px
+				color: #ffffff
+
+	.block_collapsible
+		background-color: #ffffff
+		padding: 0
+		list-style: none
+		.collapsible
+			color: #333333
+			background-color: transparent
+			cursor: pointer
+			padding: 24px 30px
+			padding-bottom: 2px
+			width: 100%
+			border: none
+			outline: none
+			display: flex
+			justify-content: space-between
+			align-items: center
+			font-size: 16px
+			@media screen and ( max-width: 1024px )
+				padding: 14px 20px
+			@media screen and ( max-width: 576px )
+				padding: 14px 20px
+		.active
+			color: #e82429
+			&::after
+				color: #fff
+
+		.collapsible
+			&:hover
+				color: #e82429
+			&:hover:after
+				color: #e82429
+			&:after
+				content: '\f078'
+				font-family: Font Awesome\ 5 Free
+				font-weight: bold
+				font-size: 12px
+				color: #333333
+				float: right
+		.active:after
+			content: "\f077"
+			color: #e82429
+		.content
+			max-height: 0
+			overflow: hidden
+			transition: max-height 0.2s ease-out
+			li
+				padding: 2px 0
+				padding-left: 20px
+				display: block
+				@media screen and ( max-width: 1024px )
+					padding: 4px 50px
+				@media screen and ( max-width: 576px )
+					padding: 2px 50px
+				a
+					font-size: 16px
+					color: #111111
+					&:hover
+						border-bottom: 1px solid #111111
+
+	.block_name_category
+		width: 100%
+		height: 50px
+		padding: 0 25px
+		background-color: #fff
+		display: flex
+		align-items: center
+		justify-content: space-between
+		@media screen and ( max-width: 576px )
+			display: block
+			padding: 0 20px
+		.name_category
+			h3
+				font-size: 18px
+				font-family: "Montserrat-Bold"
+		.area_category
+			display: flex
+			align-items: center
+			justify-content: space-between
+			p
+				font-size: 14px
+				margin-right: 18px
+			select
+				width: 195px
+				padding: 5px 10px
+				font-size: 14px
+				font-family: "Montserrat-Regular"
+				border: 1px solid #e0e0e0
+				background: url(../img/arrow_down.png) no-repeat right
+				-webkit-appearance: none
+				background-position-x: 160px
+	.card_img
+		margin-top: 30px
+		background-color: #fff
+		padding: 35px
+		text-align: center
+		border: 1px solid #e5e5e5
+		&:hover
+			border: 1px solid #000
+		@media screen and ( max-width: 576px )
+			padding: 20px
+		.name_food
+			font-family: "Nunito-Bold"
+			font-size: 16px
+			padding-top: 10px
+		.discount
+			text-decoration: line-through
+			font-size: 14px
+			color: #999999
+			padding-top: 24px
+			line-height: 14px
+			@media screen and ( max-width: 576px )
+				padding-top: 14px
+
+		.price
+			font-family: "Nunito-Bold"
+			color: #e82429
+			font-size: 16px

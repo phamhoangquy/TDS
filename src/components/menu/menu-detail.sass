@@ -1,0 +1,177 @@
+.food_detail
+	background-color: #fdfcf9
+	padding: 55px 0
+	.card_img
+		background-color: #fff
+		border: 1px solid #e5e5e5
+		.img
+			padding: 30px 40px
+			@media screen and ( max-width: 1280px )
+				padding: 35px 20px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+	.name_food
+		h2
+			font-size: 30px
+			font-family: "Montserrat-Bold"
+			color: #221f1f
+			padding: 10px 0
+	.description_food
+		font-family: "Montserrat-Regular"
+		ul
+			display: flex
+			list-style: none
+			padding: 0
+			margin-top: 30px
+			@media screen and ( max-width: 576px )
+				display: block
+				margin-top: 10px
+			li
+				font-size: 18px
+				&:first-child
+					font-weight: bold
+					width: 130px
+	.block_price
+		margin-top: 110px
+		display: flex
+		align-items: center
+		@media screen and ( max-width: 1200px )
+			margin-top: 50px
+		@media screen and ( max-width: 576px )
+			margin-top: 20px
+		.price
+			font-size: 24px
+			color: #e82429
+			font-family: "Nunito-Bold"
+			margin-right: 25px
+		.dicount
+			text-decoration: line-through
+			font-size: 14px
+			color: #999999
+			margin-right: 25px
+		.box_price
+			width: 54px
+			height: 26px
+			color: #ffffff
+			font-size: 14px
+			background-color: #e82429
+			@include center
+	.big_option
+		margin-top: 55px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		@media screen and ( max-width: 576px )
+			flex-direction: column
+			margin-top: 30px
+		a
+			font-size: 14px
+			padding: 3px 25px
+			border-radius: 50px
+			font-weight: bold
+			border: 1px solid #000
+			@include center
+			@media screen and ( max-width: 1280px )
+				padding: 3px 10px
+			@media screen and ( max-width: 576px )
+				margin-bottom: 10px
+				width: 200px
+
+			&:hover
+				background-color: #e82429
+				color: #fff
+				border: 1px solid #e82429
+			i
+				margin-left: 10px
+				font-size: 18px
+	.big_icon
+		margin-top: 30px
+		display: flex
+		align-items: center
+		@media screen and ( max-width: 576px )
+			justify-content: center
+			margin-top: 10px
+		.icon
+			font-size: 18px
+			border: 1px solid #000
+			border-radius: 50%
+			width: 25px
+			height: 25px
+			margin-right: 15px
+			@include center
+			&:hover
+				background-color: #e82429
+				color: #fff
+				border: 1px solid #e82429
+
+.other_food
+	padding: 50px 0
+	.title
+		h2
+			font-size: 30px
+			text-align: center
+			font-family: "Montserrat-ExtraBold"
+
+	.card_img
+		margin-top: 30px
+		background-color: #fff
+		padding-top: 40px
+		padding-bottom: 50px
+		text-align: center
+		border: 1px solid #e5e5e5
+		@media screen and ( max-width: 576px )
+			padding-top: 30px
+			padding-bottom: 30px
+		&:hover
+			border: 1px solid #000
+		.img
+			img
+				width: 70%
+				object-fit: cover
+				@media screen and ( max-width: 576px )
+					width: 80%
+		.name_food
+			font-family: "Nunito-Bold"
+			font-size: 16px
+			padding-top: 30px
+			padding-bottom: 20px
+			@media screen and ( max-width: 576px)
+				padding-top: 20px
+				padding-bottom: 10px
+		.discount
+			text-decoration: line-through
+			font-size: 14px
+			color: #999999
+			line-height: 14px
+
+		.price
+			font-family: "Nunito-Bold"
+			color: #e82429
+			font-size: 16px
+
+	.menu_slide
+		position: relative
+		
+		.nav-arrow-prev,.nav-arrow-next
+			position: absolute
+			top: 50%
+			z-index: 2
+			font-size: 36px
+			color: #e82429
+			cursor: pointer
+			@include center
+		.nav-arrow-next
+			right: -40px
+			@media screen and ( max-width: 576px)
+				right: -10px
+		.nav-arrow-prev
+			left: -40px
+			@media screen and ( max-width: 576px)
+				left: -10px
+	// .swiper-container
+	// 	@media screen and ( max-width: 576px)
+	// 		margin: 0 6px
