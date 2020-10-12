@@ -1,0 +1,46 @@
+section.block_booking-menu
+	.container
+		.block-title
+			.head-title
+				h1 Đặt bàn
+		.row
+			.col-12.col-md-6.col-lg-6.form-booking
+				.content_form
+					p Vui lòng điền đầy đủ thông tin và yêu cầu đặt bàn. Chúng tôi sẽ liên hệ ngày cho bạn:
+				.wrap-form
+					.row
+						.form-group.col-12
+							input.form-control(type='text', placeholder="Họ và tên (*)")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Số điện thoại (*)")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Email (*)")
+						.form-group.col-12
+							label(for="") Chon chi nhánh (*)
+						.form-group.col-12.col-md-6.col-6
+							select
+								option Tỉnh
+						.form-group.col-12.col-md-6.col-6
+							select
+								option Quận
+						.form-group.col-12
+							input.form-control(type='text', placeholder="Số khách (*)")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text', placeholder="Ngày (*)")
+							|
+							span.ri-calendar-event-fill
+						.form-group.col-12.col-md-6.col-6
+							select
+								option Giờ
+						.form-group.col-12
+							input.form-control(type='text', placeholder="Ghi chú (*)")
+					.frm-btnwrap
+						.frm-btn
+							input(type="submit" value ="ĐẶT BÀN")
+			.col-12.col-md-6.col-lg-6
+				.card_img
+					.img
+						img(src="./img/news-detail/news-detail-1.png", alt="")
+
+
+
