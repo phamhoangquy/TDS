@@ -1,0 +1,67 @@
+section.block_menu-detail
+	.container
+		.row
+			.col-xl-6.col-lg-6
+				.card_img
+					.img
+						img(src="./img/s-5/menun-detail.png", alt="")
+			.col-xl-6.col-lg-6
+				.right-food
+					.name_food-detail
+						h2 Tô cơm thịt heo xào kim chi
+					.description_food
+						ul
+							li
+								p Bao gồm
+							li
+								p Cơm, thịt heo xào, kim chi, củ hành, cải xanh, đậu Hà Lan
+					.block_price
+						ul
+							li
+								.price
+									p 62.000 VND
+							li
+								.discount
+									p 55.000 VND
+							li 
+								.discount-zone
+									p -15%
+					.icon-contact
+						a(href="") Liên hệ
+							i.ri-phone-fill
+						a(href="") Đặt hàng
+							i.ri-shopping-cart-2-line
+						a(href="") Xem địa chỉ gần nhất
+							i.ri-map-pin-2-fill
+					.icon-contact-zone
+						a(href="")
+							.icon
+								i.ri-facebook-fill
+						a(href="")
+							.icon
+								i.ri-twitter-fill
+section.other_food
+	.container
+		.block-title
+			.head-title-zone
+				h2 Món ăn khác
+		.menu-detail-swiper-wrapper
+			.nav-arrow-prev
+				em.ri-arrow-left-line
+			.nav-arrow-next
+				em.ri-arrow-right-line
+			.swiper-container.menu-detail-slide
+				.swiper-wrapper
+					- for (i=1; i<=6; i++)
+						.swiper-slide
+							.wrapper
+								.card_img
+									.img
+										img(src="./img/s-5/menun-detail.png", alt="")
+								.content-other
+									.title-menu
+										a(href="") Tô cơm cá hồi
+									.discount-slide
+										p 55.000 VND
+									.price-slide
+										p 62.000 VND
