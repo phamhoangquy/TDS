@@ -103,6 +103,44 @@ function swiperInit() {
             }
         }
     });
+    var TinhthanSwiper = new Swiper(".tinhthan_slide .swiper-container", {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 4000,
+        },
+        effect: 'coverflow',
+        coverflowEffect: {
+            rotate: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        // breakpoints: {
+        //     576: {
+        //         slidesPerView: 2,
+        //         spaceBetween: 10,
+        //         scrollbar: {
+        //             dragSize: 165,
+        //         }
+        //     },
+        //     1024: {
+        //         slidesPerView: 3,
+        //         spaceBetween: 30,
+        //         scrollbar: {
+        //             dragSize: 215,
+        //         }
+        //     },
+        //     1200: {
+        //         slidesPerView: 4,
+        //         spaceBetween: 30
+        //     }
+        // }
+    });
     var homeNewsSwiper = new Swiper(".block_s-6 .swiper-container", {
         spaceBetween: 25,
         autoplay: {

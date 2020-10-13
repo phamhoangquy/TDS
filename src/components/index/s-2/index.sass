@@ -1,0 +1,83 @@
+.block_s-2
+	padding: 120px 0
+	@media screen and ( max-width: 576px )
+		padding: 50px 0
+	.block-title
+		.head-title
+			margin-bottom: 12px
+		.caption
+			font-size: 18px
+			text-align: center
+			width: 75%
+			margin: 0 auto
+			@media screen and ( max-width: 576px )
+				width: 100%
+				font-size: 14px
+	.tinhthan_slide
+		position: relative
+		@media screen and ( max-width: 1199.98px )
+			margin-bottom: 40px
+		@media screen and ( max-width: 576px )
+			margin-bottom: 30px
+		.swiper-container
+			width: 100%
+			height: 540px
+			@media screen and ( max-width: 576px )
+				height: 240px
+			.swiper-slide
+				height: 520px
+				@media screen and ( max-width: 576px )
+					height: 220px !important
+				.img
+					max-width: 100%
+					max-height: 100%
+					width: 100%
+					height: 520px
+					@media screen and ( max-width: 576px )
+						height: 220px
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+	
+		.swiper-pagination
+			position: absolute
+			bottom: 15px
+			right: -20px
+			@media screen and ( max-width: 576px )
+				bottom: 35%
+				right: 5px
+		.swiper-pagination-bullet
+			display: block
+			margin: 6px 0
+			width: 12px
+			height: 12px
+			background: #ffffff
+			border: 2px solid #000
+			@media screen and ( max-width: 576px )
+				margin: 4px 0
+				width: 8px
+				height: 8px
+		.swiper-pagination-bullet-active
+			opacity: 1
+
+	.block_content
+		padding: 30px
+		border: 2px solid #000
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: 48px
+			left: -6px
+			width: 10px
+			height: 10px
+			border: 2px solid #fff
+			border-radius: 50%
+			background-color: #e82429
+		.title_content
+			font-family: "Montserrat-Bold"
+			h3
+				font-size: 24px
+			p
+				font-size: 18px

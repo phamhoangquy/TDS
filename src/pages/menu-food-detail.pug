@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Thực đơn chi tiết'
+	- var bodyClass = 'menu-food-detail-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/menu-food/menu-food-detail/index.pug
