@@ -43,7 +43,7 @@
 					border: 2px solid #fff
 					border-radius: 50%
 					background-color: #e82429
-	
+
 	.name-food-bottom
 		display: flex
 		justify-content: center
@@ -75,11 +75,13 @@
 	.row
 		margin-right: -5px
 		margin-left: -5px
-		.col-xl, .col-xs-6,.col-md-6, .col-sm-6
-			padding-right: 5px
-			padding-left: 5px
+		.col
+			flex: 1 0 18%
+			padding: 5px
+			@media screen and (max-width: 768px)
+				flex: 1 0 50%
+
 	.food
-		margin-top: 10px
 		background-color: #fff
 		padding: 15px
 		text-align: center
@@ -89,7 +91,7 @@
 				width: 100%
 				img
 					width: 100%
-			
+
 		.desc-food
 			.name_food
 				a
@@ -113,7 +115,7 @@
 			border: 1px solid #000
 			@media screen and ( max-width: 576px )
 				padding: 20px
-	
+
 	.btn-view-more
 		display: flex
 		justify-content: center

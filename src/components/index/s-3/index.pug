@@ -29,21 +29,21 @@ section.block_s-3
 				- for (i=0;i<=16;i++)
 					li
 						a Sushi
-
-			.row
-				- for (i=1; i<=10; i++)
-					.col-6.col-sm-6.col-lg-2
-						a(href="menu-detail.html")
-							.food
-								.card_img
-									.img
-										img(src="./img/s-5/food-1.png", alt="")
-								.desc-food
-									.name_food
-										a(href="") Tô cơm cá hồi
-									.discount
-										p 55.000 VND
-									.price
-										p 62.000 VND
+			.block
+				.row
+					- for (i=1; i<=20; i++)
+						.col
+							a(href="menu-detail.html")
+								.food
+									.card_img
+										.img
+											img(src="./img/s-5/food-1.png", alt="")
+									.desc-food
+										.name_food
+											a(href="") Tô cơm cá hồi
+										.discount
+											p 55.000 VND
+										.price
+											p 62.000 VND
 			.btn-view-more
 				a(href="") xem thêm
