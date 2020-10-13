@@ -21,7 +21,6 @@
 		list-style: none
 		border-bottom: 1px solid #e5e5e5
 		li
-			font-family: "Montserrat-Medium"
 			font-size: 14px
 			color: #999999
 			text-transform: uppercase
@@ -56,12 +55,10 @@
 			padding: 0 10px
 			&:hover
 				color: #111111
-				font-family: "Nunito-SemiBold"
 			a
 				cursor: pointer
 			.active
 				color: #111111
-				font-family: "Nunito-SemiBold"
 				position: relative
 				&:before
 					content: ""
@@ -75,9 +72,12 @@
 	.row
 		margin-right: -5px
 		margin-left: -5px
-		.col-xl, .col-xs-6,.col-md-6, .col-sm-6
-			padding-right: 5px
-			padding-left: 5px
+		.col
+			flex: 0 0 20%
+			padding: 5px
+			@media screen and (max-width: 768px)
+				flex: 1 0 50%
+
 	.food
 		margin-top: 10px
 		background-color: #fff
@@ -86,14 +86,17 @@
 		border: 1px solid #e5e5e5
 		.card_img
 			.img
-				width: 100%
+				max-width: 100%
+				max-height: 100%
+				width: 185px
+				height: 185px
 				img
 					width: 100%
-			
+					height: 100%
 		.desc-food
+			padding-top: 15px
 			.name_food
 				a
-					font-family: "Nunito-Bold"
 					font-size: 16px
 					padding-top: 6px
 			.discount
@@ -106,7 +109,6 @@
 					padding-top: 14px
 
 			.price
-				font-family: "Nunito-Bold"
 				color: #e82429
 				font-size: 16px
 		&:hover
