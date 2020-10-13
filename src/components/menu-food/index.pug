@@ -8,7 +8,7 @@ section.block_menu
 				.side-navigation-wrapper
 					.title-wrapper
 						h2 Thực đơn
-					ul.side-navigation
+					//- ul.side-navigation
 						li.open
 							.title
 								a(href="#") Món mới
@@ -101,6 +101,17 @@ section.block_menu
 									a(href="#") sushi
 								li
 									a(href="#") sushi
+					ul.block_collapsible
+						- for (i=1; i<=6; i++)
+							li
+								a.collapsible Món mới
+								ul.content
+									li
+										a(href="") Shushi
+									li
+										a(href="") Shushi
+									li
+										a(href="") Shushi
 			.col-xl-9.col-md-9
 				.block_name_category
 					.name_category Cơm văn phòng

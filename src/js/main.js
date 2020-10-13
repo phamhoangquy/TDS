@@ -103,6 +103,7 @@ function swiperInit() {
             }
         }
     });
+
     var TinhthanSwiper = new Swiper(".tinhthan_slide .swiper-container", {
         direction: 'vertical',
         slidesPerView: 'auto',
