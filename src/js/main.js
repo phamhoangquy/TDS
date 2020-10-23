@@ -11,6 +11,9 @@ $(document).ready(function() {
     swiperInit();
     wowBookInit();
     sideNavigation();
+    tabActive();
+    tabActiveHome();
+    tabActiveHome2();
 });
 
 const mainMenuMobileMapping = new MappingListener({
@@ -303,4 +306,73 @@ function sideNavigation2() {
             parent.removeClass('open')
         }
     })
+}
+
+function tabActive() {
+    $(".tab-navigation li a").on("click", function() {
+        $(this)
+            .parents(".tab-navigation")
+            .find("li")
+            .removeClass("active");
+        $(this)
+            .parents("li")
+            .addClass("active");
+
+        var display = $(this).attr("data-type");
+        $(".tab-item").removeClass("active");
+        $("#" + display).addClass("active");
+
+        let maxHeight = 400;
+        let contentTab = $(".tab-wrapper .tab-item.active");
+        // console.log(contentTab.height())
+        if (contentTab.height() < maxHeight) {
+            $(contentTab).find('.btn-view-more').hide()
+        }
+    });
+}
+
+function tabActiveHome() {
+    $(".tab-navigation-food li a").on("click", function() {
+        $(this)
+            .parents(".tab-navigation-food")
+            .find("li")
+            .removeClass("active");
+        $(this)
+            .parents("li")
+            .addClass("active");
+
+        var display = $(this).attr("data-type");
+        $(".tab-item-food").removeClass("active");
+        $("#" + display).addClass("active");
+
+        let maxHeight = 400;
+        let contentTab = $(".tab-wrapper-food .tab-item-food.active");
+        // console.log(contentTab.height())
+        if (contentTab.height() < maxHeight) {
+            $(contentTab).find('.btn-view-more').hide()
+        }
+    });
+}
+
+function tabActiveHome2() {
+    $(".tab-navigation-news li a").on("click", function() {
+        $(this)
+            .parents(".tab-navigation-news")
+            .find("li")
+            .removeClass("active");
+        $(this)
+            .parents("li")
+            .addClass("active");
+
+        var display = $(this).attr("data-type");
+        $(".tab-item-news").removeClass("active");
+        $("#" + display).addClass("active");
+
+        let maxHeight = 400;
+        let contentTab = $(".tab-wrapper-news .tab-item-news.active");
+        // console.log(contentTab.height())
+        if (contentTab.height() < maxHeight) {
+            $(contentTab).find('.btn-view-more').hide()
+        }
+    });
 }

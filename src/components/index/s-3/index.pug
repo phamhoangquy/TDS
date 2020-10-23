@@ -9,42 +9,76 @@ section.block_s-3
 				select
 					option
 						p Thành phố HCM
-			ul.menu-food-top
-				li
-					a.active Món mới
-				li
-					a Cơm văn phòng
-				li
-					a Combo
-				li
-					a Set
-				li
-					a Bento box
-				li
-					a Party set
+			.head-menu-tab
+				.tab-panels
+					ul.tab-navigation-food.menu-food-top
+						li.active
+							a(href="javascript:void(0)" data-type='pro-tab-1') Món mới
+						li
+							a(href="javascript:void(0)" data-type='pro-tab-2') Cơm văn phòng
+						li
+							a(href="javascript:void(0)" data-type='pro-tab-3') Combo
+						li
+							a(href="javascript:void(0)" data-type='pro-tab-4') Set
+						li
+							a(href="javascript:void(0)" data-type='pro-tab-5') Bento box
+						li
+							a(href="javascript:void(0)" data-type='pro-tab-6') Party set
+			.tab-wrapper-food
+				.tab-item-food.active#pro-tab-1
+					.head-zone-tab
+						.tab-panels
+							ul.tab-navigation.name-food-bottom
+								li.active
+									a(href="javascript:void(0)" data-type='product-tab-1') Tất cả
+								li
+									a(href="javascript:void(0)" data-type='product-tab-2') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-3') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-4') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-5') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-6') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-7') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-8') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-9') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-10') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-11') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-12') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-13') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-14') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-15') Sushi
+								li
+									a(href="javascript:void(0)" data-type='product-tab-16') Sushi
 
-			ul.name-food-bottom
-				li
-					a.active Tất cả
-				- for (i=0;i<=16;i++)
-					li
-						a Sushi
-
-			.big-menu-food
-				.row
-					- for (i=1; i<=10; i++)
-						.col
-							a(href="menu-detail.html")
-								.food
-									.card_img
-										.img
-											img(src="./img/s-5/food-1.png", alt="")
-									.desc-food
-										.name_food
-											a(href="") Tô cơm cá hồi
-										.discount
-											p 55.000 VND
-										.price
-											p 62.000 VND
-			.btn-view-more
-				a(href="") xem thêm
+					.tab-wrapper
+						.tab-item.active#product-tab-1
+							.big-menu-food
+								.row
+									- for (i=1; i<=10; i++)
+										.col
+											a(href="menu-detail.html")
+												.food
+													.card_img
+														.img
+															img(src="./img/s-5/food-1.png", alt="")
+													.desc-food
+														.name_food
+															a(href="") Tô cơm cá hồi
+														.discount
+															p 55.000 VND
+														.price
+															p 62.000 VND
+							.btn-view-more
+								a(href="") xem thêm

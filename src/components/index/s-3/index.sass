@@ -39,13 +39,9 @@
 			text-transform: uppercase
 			padding: 0 15px
 			display: inline
-			&:hover
+			position: relative
+			&.active
 				color: #111111
-			a
-				cursor: pointer
-			.active
-				color: #111111
-				position: relative
 				&:before
 					content: ""
 					position: absolute
@@ -56,6 +52,11 @@
 					border: 2px solid #fff
 					border-radius: 50%
 					background-color: #e82429
+			&:hover
+				color: #111111
+			a
+				cursor: pointer
+			
 	
 	.name-food-bottom
 		display: flex
@@ -67,13 +68,9 @@
 			font-size: 14px
 			color: #999999
 			padding: 0 10px
-			&:hover
+			position: relative
+			&.active
 				color: #111111
-			a
-				cursor: pointer
-			.active
-				color: #111111
-				position: relative
 				&:before
 					content: ""
 					position: absolute
@@ -83,6 +80,11 @@
 					height: 1px
 					border-radius: 50%
 					background-color: #111111
+			&:hover
+				color: #111111
+			a
+				cursor: pointer
+			
 	.row
 		margin-right: -5px
 		margin-left: -5px
