@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs" Inherits="CanhCam.Web.layout" %>
+
+<!DOCTYPE html>
+<html id="Html1" runat="server">
+
+<head id="Head1" runat="server">
+	<title></title>
+	<portal:MetaContent ID="MetaContent" runat="server" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false"
+		JQueryUIThemeName="smoothness" />
+	<portal:Favicon ID="Favicon1" runat="server" />
+	<portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludejQueryUICore="true" IncludeFancyBox="true" />
+	<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+</head>
+
+<body id="Body" runat="server" class="canhcam">
+	<portal:FacebookSdk ID="fbsdk" runat="server" />
+	<portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
+	<form id="frmMain" runat="server">
+		<asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+		<asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
+		<asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
+		<asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+		<div id="wrapper">
+			<header>
+				<div class="container">
+					<div class="header-wrapper flex justify-between items-center">
+						<div class="left-header">
+							<div class="logo">
+								<portal:modulewrapper id="mdl257" runat="server" configuremoduleid="257" />
+							</div>
+						</div>
+						<div class="right-header">
+							<div class="right-top-header flex items-center justify-end">
+								<div class="website-nav-wrap">
+									<div class="website-nav">
+										<portal:modulewrapper id="mdl259" runat="server" configuremoduleid="259" />
+										
+									</div>
+								</div>
+								<div class="search-wrap">
+									<div class="search-toggle"><span class="mdi mdi-magnify"></span></div>
+								</div>
+								<div class="language-wrap">
+									<portal:modulewrapper id="mdl262" runat="server" configuremoduleid="262" />
+								</div>
+								<div class="menu-mobile-toggle"><span class="mdi mdi-menu"></span></div>
+							</div>
+							<div class="menu-wrapper">
+								<div class="menu">
+									<portal:modulewrapper id="mdl263" runat="server" configuremoduleid="263" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="offcanvas-wrap">
+					<div class="offcanvas-bar">
+						<div class="mobile-menu"></div>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<asp:Panel ID="divAlt1" runat="server" CssClass="altcontent1">
+					<asp:ContentPlaceHolder ID="altContent1" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="leftContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins"
+					SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="mainContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divRight" runat="server" Visible="True" CssClass="rightside" SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="rightContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
+					<asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
+				</asp:Panel>
+			</main>
+			<footer>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4 footer card">
+								<portal:modulewrapper id="mdl264" runat="server" configuremoduleid="264" />
+								
+							</div>
+							<div class="col-sm-4 footer card">
+								<portal:modulewrapper id="mdl265" runat="server" configuremoduleid="265" />
+								
+							</div>
+							<div class="col-sm-4 footer card">
+								<portal:modulewrapper id="mdl266" runat="server" configuremoduleid="266" />
+								
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<portal:modulewrapper id="mdl267" runat="server" configuremoduleid="267" />
+						
+					</div>
+				</div>
+			</footer>
+			<div class="block__tool dekstop">
+				<ul>
+					<li><a href=""><em class="ri-map-pin-2-line"></em></a><a href="system-shop.html"><span>Hệ thống cửa
+								hàng</span></a></li>
+					<li><a href=""><em class="ri-file-copy-2-line"></em></a><a href="news-list.html"><span>Tin
+								tức</span></a></li>
+					<li><a href=""><em class="ri-edit-line"></em></a><a href="contact.html"><span>Liên hệ</span></a>
+					</li>
+					<li><a href=""><em class="ri-phone-line"></em></a><a
+							href=""><span>Hotline</span><span>190023450</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav>
+						<ul class="nav navbar-nav listmenu">
+							<portal:AdminMenuLink ID="lnkDashboard" IconCssClass="fa fa-key" RenderAsListItem="true"
+								runat="server" />
+							<portal:FileManagerLink ID="lnkFileManager" IconCssClass="fa fa-folder-open"
+								RenderAsListItem="true" runat="server" />
+							<portal:PageEditFeaturesLink ID="lnkPageContent" IconCssClass="fa fa-cog"
+								RenderAsListItem="true" runat="server" />
+							<portal:PageEditSettingsLink ID="lnkPageSettings" IconCssClass="fa fa-edit"
+								RenderAsListItem="true" runat="server" />
+							<portal:NewZoneLink ID="lnkNewZone" IconCssClass="fa fa-file" RenderAsListItem="true"
+								runat="server" />
+							<portal:ZoneEditSettingsLink ID="lnkZoneSettings" IconCssClass="fa fa-edit"
+								RenderAsListItem="true" runat="server" />
+							<li>
+								<div class="form-inline">
+									<div class="form-group">
+										<label class="sr-only">Mode</label>
+									</div>
+									<div class="form-group">
+										<asp:ContentPlaceHolder ID="pageEditContent" runat="server">
+										</asp:ContentPlaceHolder>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="nav">
+							<li><a href="#" id="pullmenucms"><i class="fa fa-chevron-circle-right"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$("#pullmenucms").click(function (e) {
+						e.preventDefault();
+						if ($(this).parents('.cmsadminpanel').hasClass('toggled')) {
+							ShowToolbar();
+							Set_Cookie('toolbarOpenState', 'open');
+						} else {
+							HideToolbar();
+							Set_Cookie('toolbarOpenState', 'closed');
+						}
+					});
+					var openState = Get_Cookie('toolbarOpenState');
+					if (openState != null) {
+						if (openState == 'closed') {
+							HideToolbar();
+						}
+						if (openState == 'open') {
+							ShowToolbar();
+						}
+					}
+				});
+
+				function HideToolbar() {
+					$('.cmsadminpanel').addClass("toggled");
+					$('.fa-chevron-circle-right').addClass('fa-rotate-180');
+				}
+
+				function ShowToolbar() {
+					$('.cmsadminpanel').removeClass("toggled");
+					$('.fa-chevron-circle-right').removeClass('fa-rotate-180');
+				}
+
+			</script>
+		</portal:AutoHidePanel>
+		<portal:Woopra ID="woopra11" runat="server" />
+		<div id="overlay"></div>
+	</form>
+	<script src="/Data/Sites/3/skins/default/js/core.min.js"></script>
+	<script src="/Data/Sites/3/skins/default/js/main.min.js"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=592601277979782&autoLogAppEvents=1"
+		nonce="yYDpCdmf"></script>
+</body>
+
+</html>
