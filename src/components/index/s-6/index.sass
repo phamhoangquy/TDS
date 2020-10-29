@@ -128,39 +128,64 @@
 			height: 4px
 		.swiper-pagination-progressbar .swiper-pagination-progressbar-fill
 			background: #e82429
-	// .block_card
-	// 	padding: 60px 0
-	// 	position: relative
-	// 	.img
-	// 		border: 10px solid #fff
-	// 		box-shadow: 0px 0px 12px 0px #d1d1cf
-	// 		.card_content
-	// 			position: absolute
-	// 			width: 100%
-	// 			top: 50%
-	// 			left: 50%
-	// 			transform: translate(-50%, -50%)
-	// 			display: flex
-	// 			flex-direction: column
-	// 			align-items: center
-	// 			p
-	// 				font-size: 14px
-	// 				color: #999999
-	// 				font-family: "Montserrat-Medium"
-	// 				text-transform: uppercase
-	// 			h3
-	// 				font-size: 30px
-	// 				font-family: "Montserrat-Bold"
-	// 				padding-top: 5px
-	// 				padding-bottom: 20px
-	// 			.btn_card
-	// 				// @include center
-	// 				a
-	// 					font-size: 14px
-	// 					font-family: "Nunito-Bold"
-	// 					border: 1px solid #000
-	// 					text-transform: uppercase
-	// 					// @include center
-	// 					width: 200px
-	// 					height: 45px
-	// 					border-radius: 50px
+
+	.map-store
+		.row
+			display: flex
+			justify-content: center
+			align-items: center
+		.block_card
+			padding: 60px 0
+			position: relative
+			@media screen and ( max-width: 576px )
+				padding: 30px 0
+			.img
+				border: 10px solid #fff
+				box-shadow: 0px 0px 12px 0px #d1d1cf
+				@media screen and ( max-width: 576px )
+					border: 5px solid #fff
+				.card_content
+					position: absolute
+					width: 100%
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					display: flex
+					flex-direction: column
+					align-items: center
+					p
+						font-size: 14px
+						color: #999999
+						font-family: "Montserrat-Medium"
+						text-transform: uppercase
+						@media screen and ( max-width: 576px )
+							font-size: 12px
+					h3
+						font-size: 30px
+						font-family: "Montserrat-Bold"
+						padding-top: 5px
+						padding-bottom: 20px
+						@media screen and ( max-width: 576px )
+							font-size: 24px
+							text-align: center
+					.btn_card
+						@include center
+						a
+							font-size: 14px
+							font-family: "Nunito-Bold"
+							border: 1px solid #000
+							text-transform: uppercase
+							@include center
+							width: 200px
+							height: 45px
+							border-radius: 50px
+							@media screen and ( max-width: 576px )
+								width: 150px
+								height: 40px
+								font-size: 12px
+						&:hover
+							a
+								background: #e52328
+								color: #ffffff
+								border-radius: 50px
+								border: 1px solid #ffffff
