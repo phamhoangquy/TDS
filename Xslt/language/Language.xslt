@@ -5,7 +5,7 @@
 
     <xsl:template match="/LanguageList">
         <div class="language dropdown">
-            <a class="current" href="">
+            <a class="current">
                 <xsl:value-of disable-output-escaping="yes" select="Language[IsActive = 'true']/Title"></xsl:value-of>
                 <span class="mdi mdi-chevron-down"></span>
             </a>

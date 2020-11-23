@@ -22,6 +22,12 @@
 							<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
 						</p>
 					</div>
+					<a class="button-tht">
+						<xsl:attribute name="href">
+							<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>						
+						Tìm hiểu thêm<span class="material-icons">arrow_right_alt</span>
+					</a>					
 				</div>
 			</div>
 			<div class="col-xl-9 col-lg-8 col-md-12 order2 box-p">

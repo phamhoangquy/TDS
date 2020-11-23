@@ -1,6 +1,7 @@
 <%@ Register Namespace="CanhCam.Web.UI" Assembly="CanhCam.Web" TagPrefix="portal" %>
 <%@ Register Namespace="CanhCam.Web.BannerUI" Assembly="CanhCam.Features.Banner" TagPrefix="portal" %>
 <%@ Register Namespace="CanhCam.Web.NewsUI" Assembly="CanhCam.Features.News" TagPrefix="portal" %>
+<%@ Register Namespace="CanhCam.Web.ProductUI" Assembly="CanhCam.Features.Product" TagPrefix="portal" %>
 <%@ Register Namespace="CanhCam.Web.DealerUI" Assembly="CanhCam.Features.DealerLocator" TagPrefix="portal" %>
 <%@ Register Namespace="CanhCam.Web.SharedFilesUI" Assembly="CanhCam.Features.SharedFiles" TagPrefix="portal" %>
 
@@ -30,7 +31,12 @@
 <portal:SearchResultsDisplaySettings runat="server" 
 	PageId="3"
 	/>
-
+<portal:ProductDisplaySettings runat="server" 
+	ShowOldPrice="true"
+    ShowProductCode="true"
+    ShowSubTitle="true"
+    ShowRelatedProduct="true"
+	/>
 <portal:LayoutDisplaySettings runat="server" 
     LeftSideNoRightSideCss="col-left"
     RightSideNoLeftSideCss="col-sm-3 right-content rightside right2column"

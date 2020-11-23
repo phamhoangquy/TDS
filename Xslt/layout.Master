@@ -104,7 +104,6 @@
 							</div>
 							<div class="col-sm-4 footer card">
 								<portal:modulewrapper id="mdl266" runat="server" configuremoduleid="266" />
-								
 							</div>
 						</div>
 					</div>
@@ -115,16 +114,8 @@
 				</div>
 			</footer>
 			<div class="block__tool dekstop">
-				<ul>
-					<li><a href=""><em class="ri-map-pin-2-line"></em></a><a href="system-shop.html"><span>Hệ thống cửa
-								hàng</span></a></li>
-					<li><a href=""><em class="ri-file-copy-2-line"></em></a><a href="news-list.html"><span>Tin
-								tức</span></a></li>
-					<li><a href=""><em class="ri-edit-line"></em></a><a href="contact.html"><span>Liên hệ</span></a>
-					</li>
-					<li><a href=""><em class="ri-phone-line"></em></a><a
-							href=""><span>Hotline</span><span>190023450</span></a></li>
-				</ul>
+			<portal:modulewrapper id="mdl288" runat="server" configuremoduleid="288" />
+				
 			</div>
 		</div>
 		<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">

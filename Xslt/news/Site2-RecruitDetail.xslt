@@ -58,7 +58,19 @@
 									</li>
 								</ul>
 							</div>
-							
+							<div class="r-2">
+								<a class="button-ndut" data-toggle="modal" data-target="#staticBackdrop">						
+									<i class="ri-edit-2-fill"></i>
+									Nộp đơn ứng tuyển
+								</a>
+								<a class="button-ndut">
+									<xsl:attribute name='href'>
+										<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/FileUrl"></xsl:value-of>
+									</xsl:attribute>									
+									<i class="ri-download-2-line"></i>
+									Tải form trực tuyến
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -83,7 +95,24 @@
 					</div>
 				</div>
 			</div>
-		</section>
+			<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>				
+						<iframe title="description">
+							<xsl:attribute name='src'>
+								<xsl:value-of  select="/NewsDetail/ApplyUrl"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>					
+						</iframe>					
+					</div>		
+				</div>		
+			</div>			
+		</section>		
 		<div class="index-page" id="js-page-verify" hidden="true"></div>		
 	</xsl:template>
 	

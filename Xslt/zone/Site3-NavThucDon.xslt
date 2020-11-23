@@ -10,29 +10,37 @@
                     <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
                 </h2>
             </div>
-            <ul class="block_collapsible">
+            <ul class="side-navigation">
                 <xsl:apply-templates select="Zone" mode="LV-1"></xsl:apply-templates>
             </ul>
         </div>
     </xsl:template>
     <xsl:template match="Zone" mode="LV-1">
         <li>
-            <xsl:if test="IsActive='true'">
-                <xsl:attribute name="class">
-                    <xsl:text disable-output-escaping="yes">active</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-            <a class="collapsible">
-                <xsl:attribute name="href">
-                    <xsl:text disable-output-escaping="yes">javascript: void(0);</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="title">
-                    <xsl:value-of select="Title"></xsl:value-of>
-                </xsl:attribute>
-                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-            </a>
-            <ul class="content">
-                <xsl:apply-templates select="Zone" mode="LV-2"></xsl:apply-templates>
+			<xsl:if test="position()=1">
+				<xsl:attribute name="class">
+						<xsl:text disable-output-escaping="yes">active</xsl:text>
+					</xsl:attribute>
+			</xsl:if>
+			<xsl:if test="IsActive='true'">
+				<xsl:attribute name="class">
+					<xsl:text disable-output-escaping="yes">open</xsl:text>
+				</xsl:attribute>
+			</xsl:if>
+            <div class="title">
+                <a>
+				<xsl:attribute name="href">
+					<xsl:value-of select="Url"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="title">
+					<xsl:value-of select="Title"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+				</a>
+                <em class="lnr lnr-chevron-down"></em>
+            </div>
+            <ul class="nav-sub">
+				<xsl:apply-templates select="Zone" mode="LV-2"></xsl:apply-templates>
             </ul>
         </li>
     </xsl:template>

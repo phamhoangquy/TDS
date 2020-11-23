@@ -256,8 +256,8 @@
 								</xsl:attribute>  							
 								<h2>
 									<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-									<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-								</h2>
+									<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>									
+								</h2>								
 							</a>
 						</div>
 						<div class="content"> 
@@ -267,15 +267,19 @@
 							<a>
 								<xsl:attribute name="href">
 								  <xsl:text>javascript:;</xsl:text>
-								</xsl:attribute>  								
+								</xsl:attribute>  	
+								<xsl:attribute name="data-fancybox">
+								  <xsl:text>popup</xsl:text>
+								</xsl:attribute>  	
+								<xsl:attribute name="data-src">#gioithieu-<xsl:value-of select="position()"/></xsl:attribute>  									
 								<p>Tìm hiểu thêm</p>
 								<span class="material-icons">arrow_right_alt</span>
 							</a>
 						</div>						
 					</div>
 				</div>
-				<div class="col-xl-6"> 
-					<a id="gioithieu-popup-1" href="javascript:;">			
+				<div class="col-xl-6">
+					<a href="javascript:;">
 						<div class="img"> 
 							<img>
 								<xsl:attribute name="src">
@@ -285,10 +289,42 @@
 								  <xsl:value-of select="Title"></xsl:value-of>
 								</xsl:attribute>  							
 							</img>
-						</div>
+						</div>											
 					</a>
 				</div>
 			</div>
+			<div class="g-popup" style="display:none">
+				<xsl:attribute name="id">gioithieu-<xsl:value-of select="position()"/></xsl:attribute>  
+				<div class="col-xl-12 mx-auto">
+					<div class="row align-items-center">
+						<div class="col-xl-6 p-0">
+							<div class="wrapper">
+								<div class="title">
+									<h2>
+										<xsl:value-of select="Title"></xsl:value-of>
+										<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+									</h2>
+								</div>
+								<div class="content">
+									<xsl:value-of disable-output-escaping="yes" select="FullContent"></xsl:value-of>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 p-0">
+							<div class="img"> 
+								<img>
+									<xsl:attribute name="src">
+									  <xsl:value-of select="ImageUrl"></xsl:value-of>
+									</xsl:attribute>
+									<xsl:attribute name="alt">
+									  <xsl:value-of select="Title"></xsl:value-of>
+									</xsl:attribute>  							
+								</img>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>					
 		</section>								
 	</xsl:template>	
 

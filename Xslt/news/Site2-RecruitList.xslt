@@ -8,14 +8,9 @@
 				<h2><xsl:value-of disable-output-escaping="yes" select="/NewsList/ModuleTitle"></xsl:value-of></h2>
 			</div>
 			<div class="row"> 
-				<div class="col-xl-6">
+				<div class="col-xl-12">
 					<div class="wrapper"> 																				
-						<xsl:apply-templates select="/NewsList/News[position() &lt; 5]"></xsl:apply-templates>
-					</div>
-				</div>
-				<div class="col-xl-6">
-					<div class="wrapper">
-						<xsl:apply-templates select="/NewsList/News[position() &gt; 4 and position() &lt; 9]"></xsl:apply-templates>										
+						<xsl:apply-templates select="/NewsList/News[position() &lt; 9]"></xsl:apply-templates>
 					</div>
 				</div>
 			</div>
