@@ -182,6 +182,9 @@ function swiperInit() {
             1600: {
                 slidesPerView: 5,
             },
+            1920: {
+                slidesPerView: 5,
+            },
         },
         // spaceBetween: 25,
         // // freeMode: true,

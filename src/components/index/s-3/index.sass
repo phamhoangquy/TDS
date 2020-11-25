@@ -11,7 +11,7 @@
 		// @include center
 		display: flex
 		justify-content: space-between
-		padding: 0 475px 0 475px
+		padding: 0 440px 0 440px
 		@media screen and ( max-width: 1260px )
 			padding: 0 300px 0 300px
 		@media screen and ( max-width: 1024.98px )
@@ -22,6 +22,10 @@
 			font-size: 14px
 			color: #999999
 			margin-right: 20px
+		select
+			padding: 5px 13px
+			border-radius: 50px
+			border: 1px solid #e0e0e0
 
 	.menu-food-top
 		display: flex
@@ -42,18 +46,20 @@
 			position: relative
 			&.active
 				color: #111111
+				font-weight: 700
 				&:before
 					content: ""
 					position: absolute
 					bottom: -25px
 					left: 42%
-					width: 9px
-					height: 9px
+					width: 12px
+					height: 12px
 					border: 2px solid #fff
 					border-radius: 50%
 					background-color: #e82429
 			&:hover
 				color: #111111
+				font-weight: 700
 			a
 				cursor: pointer
 			
@@ -69,8 +75,10 @@
 			color: #999999
 			padding: 0 10px
 			position: relative
+			display: flex
 			&.active
 				color: #111111
+				font-weight: 700
 				&:before
 					content: ""
 					position: absolute
@@ -84,6 +92,7 @@
 				color: #111111
 			a
 				cursor: pointer
+				white-space: nowrap
 			
 	.row
 		margin-right: -5px
@@ -112,12 +121,21 @@
 				img
 					width: 100%
 					height: 100%
+					object-fit: contain
 		.desc-food
 			padding-top: 15px
 			.name_food
 				a
 					font-size: 16px
 					padding-top: 6px
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 2
+					-o-text-overflow: ellipsis
+					display: -webkit-box
+					overflow: hidden
+					text-overflow: ellipsis
+					height: 50px
+					font-weight: 700
 			.discount
 				text-decoration: line-through
 				font-size: 14px
@@ -130,6 +148,7 @@
 			.price
 				color: #e82429
 				font-size: 16px
+				font-weight: 700
 		&:hover
 			border: 1px solid #000
 			@media screen and ( max-width: 576px )
@@ -155,3 +174,7 @@
 				background: #111111
 				color: #ffffff
 				box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25)
+
+.head-zone-tab
+	display: flex
+	overflow-x: auto
