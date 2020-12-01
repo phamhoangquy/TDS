@@ -33,7 +33,7 @@
 					.title
 						a
 							color: #333333
-							font-weight: 600
+							font-weight: 500
 							font-size: 1rem
 							&:hover
 								color: #ea2531
@@ -56,7 +56,7 @@
 					min-height: 40px
 					transition: .3s all  ease-in-out
 					a
-						font-weight: 600
+						font-weight: 500
 						color: #333333
 						font-size: 1rem
 						&:hover
@@ -88,7 +88,6 @@
 						a
 							transition: .3s all  ease-in-out
 							font-size: 16px
-							font-weight: 600
 							padding: 10px 0
 							display: block
 							color: #333333
@@ -202,8 +201,16 @@
 		@media screen and ( max-width: 576px )
 			padding: 20px
 		.name_food
-			font-size: 16px
-			padding-top: 10px
+			a
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 2
+				-o-text-overflow: ellipsis
+				display: -webkit-box
+				overflow: hidden
+				text-overflow: ellipsis
+				font-size: 16px
+				padding-top: 10px
+				height: 53px
 		.item-money
 			cursor: pointer
 			ul
@@ -214,10 +221,8 @@
 						text-decoration: line-through
 						font-size: 14px
 						color: #999999
-						padding-top: 24px
+						padding-top: 15px
 						line-height: 14px
-						@media screen and ( max-width: 576px )
-							padding-top: 14px
 					.price
 						color: #e82429
 						font-size: 16px

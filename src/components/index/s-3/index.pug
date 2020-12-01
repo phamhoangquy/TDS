@@ -4,11 +4,13 @@ section.block_s-3
 			.block-title
 				.head-title
 					h1 Thực đơn
-			.block_area
+			.block_area.tab-panels
 				p Chọn khu vực:
 				select
-					option
-						p Thành phố HCM
+					option(value="food-tab-1").tab-navigation
+						a(href="javascript:void(0)") TP. Hồ Chí Minh
+					option(value="food-tab-2")
+						a(href="javascript:void(0)") Hà Nội
 			.head-menu-tab
 				.tab-panels
 					ul.tab-navigation-food.menu-food-top

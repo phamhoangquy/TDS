@@ -1,5 +1,13 @@
 $(document).ready(function() {
-
+    swiperInit();
+    wowBookInit();
+    sideNavigation();
+    sideNavigation2();
+    tabActive();
+    tabActiveHome();
+    tabActiveHome2();
+    selectOption();
+    showBackToTop();
     $('.menu-mobile-toggle').click(function() {
         $('.offcanvas-wrap').fadeIn().addClass('offcanvas-open')
     })
@@ -8,14 +16,6 @@ $(document).ready(function() {
         if (e.target !== e.currentTarget) return
         $('.offcanvas-wrap').fadeOut().removeClass('offcanvas-open')
     })
-    swiperInit();
-    wowBookInit();
-    sideNavigation();
-    sideNavigation2();
-    tabActive();
-    tabActiveHome();
-    tabActiveHome2();
-    showBackToTop();
 });
 
 const mainMenuMobileMapping = new MappingListener({
@@ -70,6 +70,19 @@ function wowBookInit() {
         scaleToFit: ".wowbook-wrapper"
     });
 }
+
+const selectOption = () => {
+    let elements = $(".block_s-3").find('select');
+    let getValue = $(".ajxsort option:selected").val()
+    $("#" + getValue).addClass("active")
+    var checkValue = function() {
+        let getValue = $(".ajxsort option:selected").val()
+        console.log(getValue)
+        $("#" + getValue).addClass("active").siblings("").removeClass("active")
+    }
+    elements.on("change keyup", checkValue);
+
+};
 
 function swiperInit() {
     var homerSwiper = new Swiper(".home-banner .swiper-container", {
@@ -126,26 +139,6 @@ function swiperInit() {
             modifier: 1,
             slideShadows: true,
         },
-        // breakpoints: {
-        //     576: {
-        //         slidesPerView: 2,
-        //         spaceBetween: 10,
-        //         scrollbar: {
-        //             dragSize: 165,
-        //         }
-        //     },
-        //     1024: {
-        //         slidesPerView: 3,
-        //         spaceBetween: 30,
-        //         scrollbar: {
-        //             dragSize: 215,
-        //         }
-        //     },
-        //     1200: {
-        //         slidesPerView: 4,
-        //         spaceBetween: 30
-        //     }
-        // }
     });
     var homeNewsSwiper = new Swiper(".block_s-6 .swiper-container", {
         spaceBetween: 25,
@@ -186,42 +179,7 @@ function swiperInit() {
                 slidesPerView: 5,
             },
         },
-        // spaceBetween: 25,
-        // // freeMode: true,
-        // autoplay: {
-        //     delay: 4000,
-        // },
-        // navigation: {
-        //     nextEl: '.block_s-6 .nav-arrow-next',
-        //     prevEl: '.block_s-6 .nav-arrow-prev',
-        // },
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        //     dragSize: 472,
-        // },
-        // breakpoints: {
-        //     320: {
-        //         slidesPerView: 1,
-        //     },
-        //     400: {
-        //         slidesPerView: 1,
-        //     },
-        //     480: {
-        //         slidesPerView: 1,
-        //     },
-        //     768: {
-        //         slidesPerView: 3,
-        //     },
-        //     1025: {
-        //         slidesPerView: 3,
-        //     },
-        //     1440: {
-        //         slidesPerView: 5,
-        //     },
-        //     1600: {
-        //         slidesPerView: 5,
-        //     },
-        // },
+
     });
     var brandSwiper = new Swiper(".about_2 .swiper-container", {
         // Optional parameters
