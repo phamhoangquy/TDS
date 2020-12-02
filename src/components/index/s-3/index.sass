@@ -28,6 +28,11 @@
 			border: 1px solid #e0e0e0
 
 	.head-menu-tab
+		overflow-x: auto
+		padding-bottom: 15px
+		.tab-panels
+			display: flex
+	.head-menu-tab
 		display: none
 		&.active
 			display: block
@@ -45,7 +50,7 @@
 		border-bottom: 1px solid #e5e5e5
 		@media screen and ( max-width: 576px )
 			white-space: nowrap
-			overflow-x: auto
+			justify-content: left
 		li
 			font-size: 14px
 			color: #999999
@@ -71,7 +76,8 @@
 				font-weight: 700
 			a
 				cursor: pointer
-			
+				@media screen and ( max-width: 576px )
+					font-size: 14px
 	
 	.name-food-bottom
 		display: flex
@@ -187,3 +193,11 @@
 .head-zone-tab
 	display: flex
 	overflow-x: auto
+	&::-webkit-scrollbar
+		height: 0
+	&::-webkit-scrollbar-track
+		background-color: #dedede
+	&::-webkit-scrollbar-thumb
+		background-color: #e92431
+	&:hover::-webkit-scrollbar
+		height: 8px

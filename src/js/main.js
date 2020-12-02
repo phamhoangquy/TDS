@@ -74,6 +74,8 @@ function wowBookInit() {
 const selectOption = () => {
     let elements = $(".block_s-3").find("select");
     let getValue = $(".block_s-3 select option:selected").val();
+    $(".block_s-3 select").val("tab-1").trigger("change");
+    $("[data-type=tab-1]").addClass("active");
     var checkValue = function() {
         let getValue = $(".block_s-3 select option:selected").val();
         let getAttr = $(".head-menu-tab").attr("data-type");
