@@ -72,16 +72,24 @@ function wowBookInit() {
 }
 
 const selectOption = () => {
-    let elements = $(".block_s-3").find('select');
-    let getValue = $(".ajxsort option:selected").val()
-    $("#" + getValue).addClass("active")
+    let elements = $(".block_s-3").find("select");
+    let getValue = $(".block_s-3 select option:selected").val();
     var checkValue = function() {
-        let getValue = $(".ajxsort option:selected").val()
-        console.log(getValue)
-        $("#" + getValue).addClass("active").siblings("").removeClass("active")
-    }
+        let getValue = $(".block_s-3 select option:selected").val();
+        let getAttr = $(".head-menu-tab").attr("data-type");
+        console.log(getValue);
+        console.log(getAttr);
+        $("[data-type=" + getValue + "]")
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+        if (getValue == "tab-1") {
+            $("[data-type=pro-tab-172]").trigger("click");
+        } else {
+            $("[data-type=pro-tab-406]").trigger("click");
+        }
+    };
     elements.on("change keyup", checkValue);
-
 };
 
 function swiperInit() {
