@@ -1,4 +1,5 @@
 .block_s-3
+	overflow: hidden
 	.container-custom
 		background-image: url('../img/card-member/bg-member.png')
 		background-repeat: no-repeat
@@ -32,6 +33,11 @@
 		padding-bottom: 15px
 		.tab-panels
 			display: flex
+			border-bottom: 1px solid #e5e5e5
+			justify-content: center
+			align-items: center
+			@media screen and ( max-width: 576px )
+				justify-content: left
 	.head-menu-tab
 		display: none
 		&.active
@@ -47,10 +53,7 @@
 		align-items: center
 		padding: 18px 0
 		list-style: none
-		border-bottom: 1px solid #e5e5e5
-		@media screen and ( max-width: 576px )
-			white-space: nowrap
-			justify-content: left
+		
 		li
 			font-size: 14px
 			color: #999999
@@ -76,6 +79,7 @@
 				font-weight: 700
 			a
 				cursor: pointer
+				white-space: nowrap
 				@media screen and ( max-width: 576px )
 					font-size: 14px
 	
@@ -119,6 +123,7 @@
 				flex: 1 0 50%
 
 	.food
+		margin-bottom: 30px
 		margin-top: 10px
 		background-color: #fff
 		padding: 15px
