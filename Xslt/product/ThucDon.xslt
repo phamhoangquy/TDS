@@ -8,14 +8,14 @@
             <div class="name_category">
 				<xsl:value-of select="ZoneTitle" disable-output-escaping="yes"></xsl:value-of>
 			</div>
-        </div>
-        <div class="row">
+            <div class="location-filter"></div>
+        </div> 
+        <div class="row ajaxresponse">
             <xsl:apply-templates select="Product"></xsl:apply-templates>
         </div>
     </xsl:template>
     <xsl:template match="Product">
         <div class="col-xl-4 col-md-6 col-xs-6">
-            <a>
                 <xsl:attribute name="href">
                     <xsl:value-of select="Url"></xsl:value-of>
                 </xsl:attribute>
@@ -43,6 +43,7 @@
                             </xsl:attribute>
                             <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
                         </a>
+                            <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of> 
                     </div>
                     <div class="item-money">
                         <ul>
@@ -59,7 +60,6 @@
                         </ul>
                     </div>
                 </div>
-            </a>
         </div>
     </xsl:template>
 </xsl:stylesheet>

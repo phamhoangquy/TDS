@@ -45,5 +45,23 @@
                 </img>
             </a>
         </xsl:if>
+        <xsl:if test="position()=3">
+            <a class="us">
+                <xsl:attribute name="href">
+                    <xsl:value-of select="Url"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="Title"></xsl:value-of>
+                </xsl:attribute>
+                <img >
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="ImageUrl"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="Title"></xsl:value-of>
+                    </xsl:attribute>
+                </img>
+            </a>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

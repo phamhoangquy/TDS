@@ -18,7 +18,7 @@
 									</div>
 									<div class="wrapper">
 										<div class="date"> 
-											<p>12.07.2020</p>
+											<p><xsl:value-of select="/NewsDetail/CreatedDD"/>.<xsl:value-of select="/NewsDetail/CreatedMM"/>.<xsl:value-of select="/NewsDetail/CreatedYYYY"/></p>
 										</div>
 										<div class="icon">
 											<a target="_blank">

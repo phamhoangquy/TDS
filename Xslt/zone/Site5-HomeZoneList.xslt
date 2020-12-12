@@ -5,7 +5,7 @@
     <xsl:output method="html" indent="yes"/>
     <xsl:template match="/ZoneList">
         <div class="row">
-            <xsl:apply-templates select="Zone/Zone"></xsl:apply-templates>
+            <xsl:apply-templates select="Zone/Zone/Zone"></xsl:apply-templates>
         </div>
     </xsl:template>
     <xsl:template match="Zone">

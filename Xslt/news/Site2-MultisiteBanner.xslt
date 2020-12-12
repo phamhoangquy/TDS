@@ -15,7 +15,7 @@
 		<div class="swiper-slide">
 			<div class="box-cate">
 				<a>
-					<xsl:attribute name="href"><!--<xsl:value-of select="Url"></xsl:value-of>-->/linh-vuc-hoat-dong#id<xsl:value-of select="NewsId"></xsl:value-of></xsl:attribute>
+					<xsl:attribute name="href"><xsl:value-of select="Url"></xsl:value-of><!--/linh-vuc-hoat-dong#id<xsl:value-of select="NewsId"></xsl:value-of>--></xsl:attribute>
 					<xsl:attribute name="target">
 					  <xsl:value-of select="Target"></xsl:value-of>
 					</xsl:attribute>				

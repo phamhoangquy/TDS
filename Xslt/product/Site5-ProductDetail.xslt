@@ -142,7 +142,6 @@
                     <strong>
                         <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
                     </strong>
-                    <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                     <div class="price">
                         <del>
                             <xsl:value-of select="OldPrice" disable-output-escaping="yes"></xsl:value-of>
