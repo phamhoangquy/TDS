@@ -170,7 +170,7 @@
 				display: -webkit-box
 				overflow: hidden
 				text-overflow: ellipsis
-				font-size: 16px
+				font-size: 14px
 				padding-top: 10px
 				height: 53px
 		.item-money
@@ -189,19 +189,23 @@
 						color: #e82429
 						font-size: 16px
 
-.dropdown-menu
-	right: 0
-	.btn-group
-		.btn-danger
-			min-width: 194px
-			padding: 0 10px
-			border: 1px solid #e0e0e0
-			background-color: #fff
-			height: 30px
-			color: black
+.block-title
+	padding-bottom: 15px
+.location
+	padding-bottom: 30px
+	.wrap-left-select
+		.tab-nav
+			list-style: none
+			padding: 0
 			display: flex
-			align-items: center
-			border-radius: 0
-			background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z' fill='rgba(17,17,17,1)'/%3E%3C/svg%3E") no-repeat
-			background-color: #fff
-			background-position: right 10px center
+			justify-content: center
+			li
+				a
+					font-size: 24px
+					padding-right: 15px
+				&:hover
+					a
+						color: #e82429
+				&.active
+					a
+						color: #e82429
