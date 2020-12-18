@@ -120,16 +120,28 @@ function swiperInit() {
             prevEl: '.nav-arrow-prev',
         },
         breakpoints: {
-            // when window width is >= 640px
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 15
+            320: {
+                slidesPerView: 1,
             },
-            990: {
+            400: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1025: {
+                slidesPerView: 2,
+            },
+            1440: {
                 slidesPerView: 3,
-                spaceBetween: 20
-            }
-        }
+            },
+            1600: {
+                slidesPerView: 3,
+            },
+        },
     });
 
     var TinhthanSwiper = new Swiper(".tinhthan_slide .swiper-container", {
