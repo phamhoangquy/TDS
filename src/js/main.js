@@ -7,6 +7,7 @@ $(document).ready(function() {
     tabActiveHome();
     tabActiveHome2();
     selectOption();
+    searchToggle();
     showBackToTop();
     $('.menu-mobile-toggle').click(function() {
         $('.offcanvas-wrap').fadeIn().addClass('offcanvas-open')
@@ -18,6 +19,12 @@ $(document).ready(function() {
     })
 });
 
+function searchToggle() {
+    $('.search-toggle, .btn-close').click(function() {
+        $(this).toggleClass("click");
+        $('.searchbox').toggleClass("show");
+    })
+}
 const mainMenuMobileMapping = new MappingListener({
     selector: ".menu-wrapper",
     mobileWrapper: ".mobile-menu",
