@@ -20,9 +20,8 @@ header
 									a(href="#") Tokyo Deli Express
 								li
 									a(href="#") Tokyo Deli Catering
-					.search-wrap
-						.search-toggle
-							span.mdi.mdi-magnify
+					.search-icon
+						span.mdi.mdi-magnify
 					.language-wrap
 						.language.dropdown
 							a(href="").current 
@@ -61,7 +60,12 @@ header
 								a(href="system-shop.html") Hệ thông cửa hàng
 							li
 								a(href="recruitment.html") Tuyển dụng
-
+	.block_search
+		.search-icon
+			span.ri-close-line
+		.search_box
+			input(type="text" placeholder="Tìm kiếm")
+			button(type="submit").ri-search-line
 	.offcanvas-wrap
 		.offcanvas-bar
 			.mobile-menu

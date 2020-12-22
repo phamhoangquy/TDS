@@ -43,14 +43,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="search-wrap">
-                                        <div class="search-toggle"><span class="mdi mdi-magnify"></span></div>
-                                        <div class="searchbox">
-                                            <input type="text" placeholder="Tìm kiếm...">
-                                            <button><span class="mdi mdi-magnify"></span></button>
-                                            <div class="btn-close"><span class="ri-close-line"></span></div>
-                                        </div>
-                                    </div>
+                                    <div class="search-icon"><span class="mdi mdi-magnify"></span></div>
                                     <div class="language-wrap">
                                         <portal:modulewrapper id="mdl262" runat="server" configuremoduleid="262" />
                                     </div>
@@ -62,6 +55,12 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="block_search">
+                        <div class="search-icon"><span class="ri-close-line"></span></div>
+                        <div class="searchbox">
+                            <portal:modulewrapper id="mdl415" runat="server" configuremoduleid="415" />
                         </div>
                     </div>
                     <div class="offcanvas-wrap">

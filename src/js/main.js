@@ -20,10 +20,10 @@ $(document).ready(function() {
 });
 
 function searchToggle() {
-    $('.search-toggle, .btn-close').click(function() {
+    $('.search-icon').click(function() {
         $(this).toggleClass("click");
-        $('.searchbox').toggleClass("show");
-    })
+        $('.block_search').toggleClass("show");
+    });
 }
 const mainMenuMobileMapping = new MappingListener({
     selector: ".menu-wrapper",
