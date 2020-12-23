@@ -12,7 +12,11 @@ $(document).ready(function() {
     $('.menu-mobile-toggle').click(function() {
         $('.offcanvas-wrap').fadeIn().addClass('offcanvas-open')
     })
-
+    if ($(".form-booking").length == 1) {
+        $("form input[type=submit]").click(function() {
+            $(".content_form").remove();
+        });
+    }
     $('.offcanvas-wrap').click(function(e) {
         if (e.target !== e.currentTarget) return
         $('.offcanvas-wrap').fadeOut().removeClass('offcanvas-open')
