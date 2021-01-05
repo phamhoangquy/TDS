@@ -159,17 +159,22 @@
 				background: #ffffff
 				color: #111111
 
-	
 	.card_img
-		padding-bottom: 30px
+		height: 360px
 		margin-top: 30px
 		background-color: #fff
 		text-align: center
 		border: 1px solid #e5e5e5
 		&:hover
 			border: 1px solid #000
+		@media screen and ( max-width:1024.98px )
+			height: 295px
+		@media screen and ( max-width:767px )
+			height: auto
+			padding-bottom: 30px
 		@media screen and ( max-width: 576px )
 			padding: 20px
+			height: auto
 		.name_food
 			padding: 0 35px
 			a
