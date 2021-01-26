@@ -21,7 +21,7 @@
 										</xsl:text>
                                             <xsl:value-of disable-output-escaping="yes" select="FullUrl"></xsl:value-of>
                                         </xsl:attribute>
-                                        <span class="mdi mdi-facebook"></span>
+                                        <span class="ri-facebook-fill"></span>
                                     </a>
                                     <a>
                                         <xsl:attribute name="href">
@@ -92,7 +92,18 @@
                                     <div class="icon">
                                         <i class="ri-download-2-line"></i>
                                     </div>
-                                    <a href="">Tải form ứng tuyển</a>
+                                    <a download="">
+                                        <xsl:attribute name="href">
+                                            <xsl:value-of select="FileUrl"></xsl:value-of>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="title">
+                                            <xsl:value-of select="Title"></xsl:value-of>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="target">
+                                            <xsl:value-of select="Target"></xsl:value-of>
+                                        </xsl:attribute>
+                                        <xsl:text disable-output-escaping="yes">Tải form ứng tuyển</xsl:text> 
+                                    </a>
                                 </div>
                             </div>
                         </div>

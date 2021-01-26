@@ -24,14 +24,22 @@
                 </xsl:attribute>
                 <div class="card_img">
                     <div class="img">
-                        <img >
-                            <xsl:attribute name="src">
-                                <xsl:value-of select="ImageUrl"></xsl:value-of>
+                        <a>
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="Url"></xsl:value-of>
                             </xsl:attribute>
-                            <xsl:attribute name="alt">
+                            <xsl:attribute name="title">
                                 <xsl:value-of select="Title"></xsl:value-of>
                             </xsl:attribute>
-                        </img>
+                            <img >
+                                <xsl:attribute name="src">
+                                    <xsl:value-of select="ImageUrl"></xsl:value-of>
+                                </xsl:attribute>
+                                <xsl:attribute name="alt">
+                                    <xsl:value-of select="Title"></xsl:value-of>
+                                </xsl:attribute>
+                            </img>
+                        </a>
                     </div>
                     <div class="name_food">
                         <a>

@@ -165,8 +165,18 @@
 		background-color: #fff
 		text-align: center
 		border: 1px solid #e5e5e5
+		.img
+			cursor: pointer
+			overflow: hidden
+			transition: .3s all ease-in-out
+			img
+				transform: scale(1)
+				transition: .3s all ease-in-out
 		&:hover
 			border: 1px solid #000
+			.img
+				img
+					transform: scale(1.13)
 		@media screen and ( max-width:1024.98px )
 			height: 295px
 		@media screen and ( max-width:767px )

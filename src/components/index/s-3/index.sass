@@ -12,6 +12,7 @@
 		// @include center
 		display: flex
 		justify-content: space-between
+		align-items: center
 		padding: 0 440px 0 440px
 		@media screen and ( max-width: 1260px )
 			padding: 0 300px 0 300px
@@ -139,10 +140,19 @@
 				max-height: 100%
 				width: 100%
 				height: 185px
+				overflow: hidden
+				transition: .3s all ease-in-out
+				cursor: pointer
 				img
+					transform: scale(1)
+					transition: .3s all ease-in-out
 					width: 100%
 					height: 100%
 					object-fit: contain
+			&:hover
+				.img
+					img
+						transform: scale(1.13)
 		.desc-food
 			padding: 15px
 			.name_food

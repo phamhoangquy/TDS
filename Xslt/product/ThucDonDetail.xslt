@@ -56,8 +56,8 @@
 								</ul>
 							</div>
 							<div class="icon-contact">
-								<a href="">Liên hệ<i class="ri-phone-fill"></i></a>
-								<a href="">Đặt hàng<i class="ri-shopping-cart-2-line"></i></a>
+								<a href="/lien-he">Liên hệ<i class="ri-phone-fill"></i></a>
+								<a href="/dat-ban">Đặt hàng<i class="ri-shopping-cart-2-line"></i></a>
 								<a href="">Xem địa chỉ gần nhất<i class="ri-map-pin-2-fill"></i></a>
 							</div>
 							<xsl:if test="count(LinkShops) > 0">
