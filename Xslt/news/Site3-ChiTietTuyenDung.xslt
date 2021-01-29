@@ -23,7 +23,7 @@
                                         </xsl:attribute>
                                         <span class="ri-facebook-fill"></span>
                                     </a>
-                                    <a>
+                                    <!-- <a>
                                         <xsl:attribute name="href">
                                             <xsl:text disable-output-escaping="yes">
 											https://www.linkedin.com/shareArticle?mini=true&amp;url=
@@ -40,7 +40,7 @@
                                             <xsl:value-of disable-output-escaping="yes" select="FullUrl"></xsl:value-of>
                                         </xsl:attribute>
                                         <span class="fab fa-twitter"></span>
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>
