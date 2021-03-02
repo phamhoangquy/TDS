@@ -57,7 +57,7 @@
 							</div>
 							<div class="icon-contact">
 								<a href="tel:+028 3943 1501">Liên hệ<i class="ri-phone-fill"></i></a>
-								<a href="/http://tokyodeli.canhcam.asia">Đặt hàng<i class="ri-shopping-cart-2-line"></i></a>
+								<a href="http://tokyodeli.canhcam.asia">Đặt hàng<i class="ri-shopping-cart-2-line"></i></a>
 								<a href="/he-thong-cua-hang">Xem địa chỉ gần nhất<i class="ri-map-pin-2-fill"></i></a>
 							</div>
 							<xsl:if test="count(LinkShops) > 0">
